@@ -1,2 +1,24 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-01-15T05:03:27+00:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">싱싱한 개발자의 블로그</title><subtitle>신입 개발자의 블로그</subtitle><author><name>anstjaos</name></author><entry><title type="html">댓글 테스트</title><link href="http://localhost:4000/test/comments-test/" rel="alternate" type="text/html" title="댓글 테스트" /><published>2020-01-15T00:00:00+00:00</published><updated>2020-01-15T00:00:00+00:00</updated><id>http://localhost:4000/test/comments-test</id><content type="html" xml:base="http://localhost:4000/test/comments-test/">&lt;p&gt;댓글이 잘 작동되나??&lt;/p&gt;</content><author><name>anstjaos</name></author><category term="Test" /><summary type="html">comments test</summary></entry><entry><title type="html">github.io 블로그 시작하기</title><link href="http://localhost:4000/blog/first-post/" rel="alternate" type="text/html" title="github.io 블로그 시작하기" /><published>2020-01-14T00:00:00+00:00</published><updated>2020-01-14T00:00:00+00:00</updated><id>http://localhost:4000/blog/first-post</id><content type="html" xml:base="http://localhost:4000/blog/first-post/">&lt;p&gt;안녕하세요
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-01-15T05:23:19+00:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">싱싱한 개발자의 블로그</title><subtitle>신입 개발자의 블로그</subtitle><author><name>anstjaos</name></author><entry><title type="html">NHN 신입교육 1일차 후기</title><link href="http://localhost:4000/nhn/newbie-education/" rel="alternate" type="text/html" title="NHN 신입교육 1일차 후기" /><published>2020-01-15T00:00:00+00:00</published><updated>2020-01-15T00:00:00+00:00</updated><id>http://localhost:4000/nhn/newbie-education</id><content type="html" xml:base="http://localhost:4000/nhn/newbie-education/">&lt;h2 id=&quot;nhn-신입교육-후기&quot;&gt;NHN 신입교육 후기&lt;/h2&gt;
+
+&lt;p&gt;입사일인 2020년 1월 2일부터 7일간 회사 교육을 진행하였다.&lt;/p&gt;
+
+&lt;h3 id=&quot;서비스-교육&quot;&gt;서비스 교육&lt;/h3&gt;
+
+&lt;p&gt;NHN이라는 회사가 현재 제공하고 있는 대표 서비스들에 대한 교육을 받았다.&lt;/p&gt;
+
+&lt;p&gt;서비스 팀의 이사님이나 수석님들께서 직접 오셔서 강연을 해주셔서 더욱 감동을 받았다.&lt;/p&gt;
+
+&lt;p&gt;설명을 들으며 회사에 대한 애정이 솟아나는 것 같았다.&lt;/p&gt;
+
+&lt;h3 id=&quot;개발자-교육&quot;&gt;개발자 교육&lt;/h3&gt;
+
+&lt;p&gt;7일간 다양한 교육을 받았는데 그 중 가장 많이 기억에 남는 것은 개발자 교육이였다.&lt;/p&gt;
+
+&lt;p&gt;기술적인 부분보다는 앞으로 개발자의 삶을 살아가는데 있어서 어떤 마음가짐을 가져야 하는지에 대한 교육이였다.&lt;/p&gt;
+
+&lt;p&gt;현업에서 날리고(?) 계신 실무자분들이 직접 자신의 경험담과 함께 강연해주셔서 좋았다.&lt;/p&gt;
+
+&lt;p&gt;들으면서 ‘이제 직장인이구나..’ 라는 생각을 뼈저리게 했던거 같다.&lt;/p&gt;
+
+&lt;p&gt;굉장히 좋은 몇몇 말들은 메모해놨으니 나중에 힘들 때마다 꺼내봐야겠다.&lt;/p&gt;</content><author><name>anstjaos</name></author><category term="NHN" /><category term="신입교육" /><summary type="html">NHN 신입교육 후기</summary></entry><entry><title type="html">댓글 테스트</title><link href="http://localhost:4000/test/comments-test/" rel="alternate" type="text/html" title="댓글 테스트" /><published>2020-01-15T00:00:00+00:00</published><updated>2020-01-15T00:00:00+00:00</updated><id>http://localhost:4000/test/comments-test</id><content type="html" xml:base="http://localhost:4000/test/comments-test/">&lt;p&gt;댓글이 잘 작동되나??&lt;/p&gt;</content><author><name>anstjaos</name></author><category term="Test" /><summary type="html">comments test</summary></entry><entry><title type="html">github.io 블로그 시작하기</title><link href="http://localhost:4000/blog/first-post/" rel="alternate" type="text/html" title="github.io 블로그 시작하기" /><published>2020-01-14T00:00:00+00:00</published><updated>2020-01-14T00:00:00+00:00</updated><id>http://localhost:4000/blog/first-post</id><content type="html" xml:base="http://localhost:4000/blog/first-post/">&lt;p&gt;안녕하세요
 이 글의 제목은 github.io 블로그 시작하기입니다.&lt;/p&gt;</content><author><name>anstjaos</name></author><category term="Blog" /><summary type="html">github.io 블로그 시작</summary></entry></feed>
