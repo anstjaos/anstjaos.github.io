@@ -32,7 +32,7 @@ words_per_minute         : 200
 comments:
   provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
   disqus:
-    shortname            : "anstjaos.github.io" # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+    shortname            : "github-comments" # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
@@ -109,7 +109,7 @@ analytics:
 author:
   name             : "anstjaos"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
+  bio              : "아직까지는 **싱싱한** 개발자입니다"
   location         : "Republic of Korea"
   email            :
   links:
@@ -290,7 +290,7 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: # true
+      comments: true
       share: true
       related: true
 
@@ -305,3 +305,6 @@ defaults:
       comments: false
       share: true
       related: false
+
+github: [metadata]
+
