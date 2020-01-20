@@ -4,7 +4,7 @@ excerpt: "Javascript 기본 교육 정리"
 
 categories:
  - Study
-  tags:
+tags:
  - Web
  - Javascript
 ---
