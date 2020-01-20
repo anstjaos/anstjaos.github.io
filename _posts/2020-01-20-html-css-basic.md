@@ -1,6 +1,4 @@
-
-
-```
+---
 title: "HTML/CSS Basic"
 excerpt: "HTML과 CSS 기본"
 
@@ -10,7 +8,7 @@ tags:
  - Web
  - HTML
  - CSS
-```
+---
 
 
 
