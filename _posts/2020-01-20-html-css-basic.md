@@ -12,8 +12,6 @@ tags:
 
 
 
-# HTML / CSS Basic
-
 ## 01. HTML 기본 구조와 영역을 나누는 Element
 
 ### 웹의 구성요소
