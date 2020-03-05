@@ -27,7 +27,7 @@ jsp 파일에서 파일 첨부를 하기 위해 다음과 같은 태그를 사�
 
 
 
-![file-upload-bug](https://github.com/anstjaos/anstjaos.github.io/blob/master/images/file-upload-bug.PNG)![file-upload-bug-1](https://github.com/anstjaos/anstjaos.github.io/blob/master/images/file-upload-bug1.PNG)
+![file-upload-bug](https://i.imgur.com/rh5ltw2.png)![file-upload-bug-1](https://i.imgur.com/JHNqyPd.png)
 
 
 
@@ -68,8 +68,8 @@ jsp 파일에서 파일 첨부를 하기 위해 다음과 같은 태그를 사�
 
 적용된 화면은 다음과 같다.
 
-![file-upload-bug-fix](https://github.com/anstjaos/anstjaos.github.io/blob/master/images/file-upload-bug-fix.PNG)
-
+![file-upload-bug-fix](https://i.imgur.com/CcwysnY.png
+)
 
 
 꼼수(?)처럼 기존의 input을 hidden으로 처리하고 input 을 위한 label을 추가하였다.
