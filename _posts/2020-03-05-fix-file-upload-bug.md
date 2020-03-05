@@ -27,7 +27,7 @@ jsp 파일에서 파일 첨부를 하기 위해 다음과 같은 태그를 사�
 
 
 
-![file-upload-bug](../images/file-upload-bug.png)![file-upload-bug-1](../images/file-upload-bug1.png)
+![file-upload-bug](https://github.com/anstjaos/anstjaos.github.io/blob/master/images/file-upload-bug.PNG)![file-upload-bug-1](https://github.com/anstjaos/anstjaos.github.io/blob/master/images/file-upload-bug1.PNG)
 
 
 
@@ -68,7 +68,7 @@ jsp 파일에서 파일 첨부를 하기 위해 다음과 같은 태그를 사�
 
 적용된 화면은 다음과 같다.
 
-![file-upload-bug-fix](../images/file-upload-bug-fix.png)
+![file-upload-bug-fix](https://github.com/anstjaos/anstjaos.github.io/blob/master/images/file-upload-bug-fix.PNG)
 
 
 
