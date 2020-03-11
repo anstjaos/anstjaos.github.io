@@ -25,7 +25,7 @@ tags:
 
 http://<DOMAIN>/server-status에 접근 시 다음과 같은 화면이 출력되었다.
 
-![img](https://i.imgur.com/nPdJx6d.png)
+![img](https://i.imgur.com/bHGAuKd.png)
 
 관리자만이 볼 수 있어야하는 server-status가 외부에 쉽게 노출되었다.
 
