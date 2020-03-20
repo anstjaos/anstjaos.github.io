@@ -26,7 +26,7 @@ tags:
 
 
 
-![메일 로딩화면](https://i.imgur.com/0RLC9wV.png)
+![mail_loading](https://i.imgur.com/OzxfI14.png)
 
 
 
@@ -58,9 +58,7 @@ css로 style을 분리하는게 맞지만 일단 지금은 같이 붙였다.
 
 위와 같이 화면을 구성하면 다음과 같은 화면이 보인다.
 
-![수정 스피너](https://i.imgur.com/FTrkdg8.png)
-
-
+![update_spinner](https://i.imgur.com/NOtriEP.png)
 
 div로 화면을 덮었기 때문에 뒤에 있는 화면 구성요소들에 액션이 먹히지 않는다.
 

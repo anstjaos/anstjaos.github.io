@@ -9,6 +9,8 @@ tags:
  - Javascript
 ---
 
+#### 출처: NHN 기술교육 - JavaScript 기본 (김성호 책임님)
+
 ### 웹 언어를 배울 때 Todolist를 만들자
 
 #### SPEC
