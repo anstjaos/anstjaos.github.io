@@ -23,7 +23,8 @@ tags:
 * 모든 클래스가 자신이 속한 패키지 내에서 유일한 이름을 가져야 한다는 것을 뜻한다.
     * **완전한 이름(fully qualified name)** : 소속된 패키지 구조를 보여주는 이름 예) System::Date
 
-![7-1](https://i.imgur.com/BMUA0RA.png)
+![7-1](https://i.imgur.com/BMUA0RA.png)<br>
+
 <i>**그림 7.1** 다이어그램에서 패키지를 표현하는 방법</i>
 
 * UML에서는 패키지 내의 클래스가 **public** 또는 **private**일 수 있다.
@@ -47,7 +48,8 @@ tags:
 * 좋은 패키지 구조는 **의존의 흐름**을 명확하게 보여준다.
 * 보통 모든 의존이 한 방향으로 흐를 때에 흐름이 명확하다고 생각할 수 있다. 이것은 시스템이 잘 구성되었는지에 대한 좋은 지표이지만, 예외는 존재한다.
 
-![7-2](https://i.imgur.com/s3Qe5qT.png)
+![7-2](https://i.imgur.com/s3Qe5qT.png)<br>
+
 <i>**그림 7.2** 엔터프라이즈 어플리케이션을 위한 패키지 다이어그램</i>
 
 * 의존에는 사이클이 없어야 한다.
@@ -61,20 +63,23 @@ tags:
 
 * *그림 7.2*를 *그림 7.3*처럼 두 가지 측면을 분리해서 차이를 더 분명하게 만들 수 있다.
 
-![7-3](https://i.imgur.com/ZM4WuGN.png)
+![7-3](https://i.imgur.com/ZM4WuGN.png)<br>
+
 <i>**그림 7.3** 그림 7.2를 두 개의 측면으로 구분한 예</i>
 
 
 
 ## 패키지 구현하기
 
-![7.4](https://i.imgur.com/qXFsAdK.png)
+![7.4](https://i.imgur.com/qXFsAdK.png)<br>
+
 <i>**그림 7.4** 하나의 패키지가 여러 개의 패키지들에 의해 구현되는 예</i>
 
 * **실현 관계(realization relationship)** 는 데이터베이스 게이트웨이가 인터페이스를 정의하고 다른 게이트웨이 클래스들이 구현을 하는 것을 나타낸다.
 * 인터페이스와 그것의 구현이 서로 다른 패키지에 있는 것은 아주 흔한 일이다.
 
-![7.5](https://i.imgur.com/kEBbFKU.png)
+![7.5](https://i.imgur.com/kEBbFKU.png)<br>
+
 <i>**그림 7.5** 클라이언트 패키지에서 필요한 인터페이스를 정의한다.</i>
 
 

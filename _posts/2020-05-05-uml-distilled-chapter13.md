@@ -17,15 +17,18 @@ tags:
 
 * 복잡한 객체를 여러 개의 부분으로 나눌 수 있도록 해준다.
 
-  
+  <br>
 
-  ![13.1.png](https://i.imgur.com/Ha0YZwE.png)
+  ![13.1.png](https://i.imgur.com/Ha0YZwE.png)<br>
+
   <i>**그림 13.1** TV 뷰어와 그 인터페이스를 나타내는 두 가지 방법</i>
 
-![13.2.png](https://i.imgur.com/z9LXQ4t.png)
+![13.2.png](https://i.imgur.com/z9LXQ4t.png) <br>
+
 <i>**그림 13.2** 컴포넌트의 내부 모습(제임스 럼보가 제안한 예제)</i>
 
-![13.3.png](https://i.imgur.com/MZcTfbK.png)
+![13.3.png](https://i.imgur.com/MZcTfbK.png) <br>
+
 <i>**그림 13.3** 여러 개의 포트를 가진 컴포넌트</i>
 
 

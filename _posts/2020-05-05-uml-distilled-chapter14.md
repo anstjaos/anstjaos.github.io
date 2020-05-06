@@ -18,10 +18,12 @@ tags:
 * **컴포넌트**는 고객이 어떻게 소프트웨어를 사고 싶어하는 지에 대한 것이다.
 * 컴포넌트는 독립적으로 구입하고 업그레이드 할 수 있는 부분을 의미한다.
 
-![14.1.png](https://i.imgur.com/lcIEkK4.png)
+![14.1.png](https://i.imgur.com/lcIEkK4.png)<br>
+
 <i>**그림 14.1** 컴포넌트의 표기법</i>
 
-![14.2.png](https://i.imgur.com/ujzOBsW.png)
+![14.2.png](https://i.imgur.com/ujzOBsW.png)<br>
+
 <i>**그림 14.2** 컴포넌트 다이어그램의 예</i>
 
 

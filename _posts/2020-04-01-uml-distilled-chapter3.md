@@ -20,8 +20,7 @@ tags:
 
 * 시스템의 객체의 **타입**과 그들 간에 존재하는 다양한 **정적 관계**에 대해서 기술한다.
 * 클래스의 **프로퍼티(property)** 와 **오퍼레이션(operation)**, 객체들이 연결되는 방법에 적용되는 **제약사항(constraints)** 을 보여준다.
-![3.1](https://i.imgur.com/nT4kszi.png)
-<i>**그림 3.1** 단순한 클래스 다이어그램</i>
+![3.1](https://i.imgur.com/nT4kszi.png)<br><i>**그림 3.1** 단순한 클래스 다이어그램</i>
 
 
 
@@ -45,8 +44,9 @@ tags:
 * **기본 값(default)** : 속성의 값이 지정되지 않으면 기본적으로 갖게 되는 값이다.
 * **프로퍼티 문장(property-string)** : 속성에 대한 추가 프로퍼티를 나타낸다.
 
-![3.2](https://i.imgur.com/eVGoGG1.png)
-***그림 3.2** order의 프로퍼티를 속성으로 나타낸 것*
+![3.2](https://i.imgur.com/eVGoGG1.png)<br>
+
+<i>**그림 3.2** order의 프로퍼티를 속성으로 나타낸 것</i>
 
 
 
@@ -56,7 +56,7 @@ tags:
 * 프로퍼티의 이름은 연관의 타겟 쪽 끝 쪽에 다중성과 함께 표시된다.
 * 연관의 타겟 쪽 끝은 프로퍼티의 타입이 되는 클래스와 연결된다.
 
-![img](https://i.imgur.com/dxM8us2.png)
+![img](https://i.imgur.com/dxM8us2.png)<br>
 
 <i>**그림 3.3** order의 프로퍼티를 연관으로 나타낸 것</i>
 
@@ -93,7 +93,7 @@ tags:
 
 
 
-![3.4](https://i.imgur.com/AGuLOTU.png)
+![3.4](https://i.imgur.com/AGuLOTU.png)<br>
 
 <i>**그림 3.4** 양방향 연관</i>
 
@@ -102,7 +102,8 @@ tags:
 
 
 
-![3.5](https://i.imgur.com/2DsoMuh.png)
+![3.5](https://i.imgur.com/2DsoMuh.png)<br>
+
 <i>**그림 3.5** 연관의 이름을 동사형으로 붙인 예</i>
 
 
@@ -153,7 +154,8 @@ tags:
 
 * **노트(note)** 는 다이어그램에 있는 주석이다.
 
-![3.6](https://i.imgur.com/EVMgKFd.png)
+![3.6](https://i.imgur.com/EVMgKFd.png)<br>
+
 <i>**그림 3.6** 노트는 하나 이상의 다이어그램 요소에 대한 주석으로 쓰인다.</i>
 
 
@@ -166,7 +168,8 @@ tags:
 
 
 
-![image.png](https://i.imgur.com/GjPH0yo.png)
+![image.png](https://i.imgur.com/GjPH0yo.png)<br>
+
 <i>**그림 3.7** 의존의 예</i>
 
 * 의존은 한 방향으로만 이루어져야 한다.

@@ -31,7 +31,8 @@ tags:
 * 유스 케이스의 본체에는 메인 성공 시나리오의 단계에 번호를 부여해서 기록한다.
 * 다른 시나리오는 **확장(extension)** 으로 기록한다.
 
-![9-1](https://i.imgur.com/HcBUNMN.png)
+![9-1](https://i.imgur.com/HcBUNMN.png)<br>
+
 <i>**그림 9.1** 유스케이스 내용의 예</i>
 
 
@@ -56,7 +57,8 @@ tags:
     * 어떤 액터가 어떤 유스 케이스를 수행하는가
     * 어떤 유스 케이스가 다른 유스 케이스를 포함하는가
 
-![9-2](https://i.imgur.com/xyDpbvr.png)
+![9-2](https://i.imgur.com/xyDpbvr.png)<br>
+
 <i>**그림 9.2** 유스 케이스 다이어그램</i>
 
 

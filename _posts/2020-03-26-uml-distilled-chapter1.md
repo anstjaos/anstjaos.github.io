@@ -11,12 +11,16 @@ tags:
  - 정리
 ---
 
+
+
 # 1\. UML 소개
 
 ## UML이란 무엇인가?
 
 * **UML(Unified Modeling Language)** 은 그래픽 표기법의 집합으로, **단일 메타모델**을 기초로 하고 있으며 소프트웨어 시스템, 특히 객체 지향 소프트웨어 시스템을 **표현하고 설계**하는 것을 도와준다.
 * 그래픽 모델링 언어(graphical modeling language)가 등장하게 된 근본적인 이유는 **프로그래밍 언어가 설계에 대한 논의에 도움을 줄 수 있을 만큼 충분히 추상적이지 못하기 때문이다.**
+
+
 
 ## UML을 사용하는 방법들
 
@@ -61,6 +65,8 @@ tags:
     * 특정 도메인에 대해서 이야기하는 데 필요한 용어 사전을 구축하는 것이다.
     `UML의 핵심 요소를 보는 관점도 다양하지만, 저자는 메타모델이 UML의 정수라고 생각한다.`
 
+
+
 ## 표기법과 메타모델
 
 ### 표기법
@@ -76,8 +82,11 @@ tags:
 * **언어의 개념을 정의하는 다이어그램**을 말하며 주로 클래스 다이어그램이다.
 * 메타모델이 해당 언어의 **추상적인 구문**을 정의한다.
 
-![metamodel](https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSSrwPwlYgoq1lyIf49nHzpJWx_kyHxtYNfn3pVU4fhqc8X4uq1)
+![metamodel](https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSSrwPwlYgoq1lyIf49nHzpJWx_kyHxtYNfn3pVU4fhqc8X4uq1) <br>
+
 **그림 1.1** UML 메타모델 일부
+
+
 
 ## UML 다이어그램
 
@@ -97,7 +106,8 @@ tags:
 | 타이밍<br>(Timing)                  | 타이밍에 중점을 둔 객체 간의 교류                          | UML 2에서 처음 소개됨     |
 | 유스케이스<br>(Use case)            | 사용자가 시스템과 어떻게 교류하는가                        | UML 1                     |
 
-![image](https://i.imgur.com/FNdqBki.png)
+![image](https://i.imgur.com/FNdqBki.png)<br>
+
 **그림 1.2** UML 다이어그램 타입의 분류
 
 ## 적법한 UML이란 무엇인가?
@@ -116,6 +126,8 @@ UML이 **규범적인 규칙**을 가지고 있는가? **기술적인 규칙**�
 * UML의 기본적인 원칙은 **다이어그램에 따라서 어떤 정보는 감춰져 있을 수 있다**는 것이다.
 * UML을 **스케치용**이나 **청사진**을 만드는 용도로 사용하는 사람들에게 **적법한 UML 사용을 지나치게 강조하지 않는 것**이 중요하다.
 * 시스템에 대해서 더 좋은 설계를 하는 것이 훨씬 더 중요하므로, 저자는 **적법하지 않지만 좋은 설계**가 낫다고 생각한다.
+
+
 
 ## 그 외
 

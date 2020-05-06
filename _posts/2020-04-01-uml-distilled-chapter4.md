@@ -20,7 +20,8 @@ tags:
 
 
 
-![4.1](https://i.imgur.com/HY1J7qD.png)
+![4.1](https://i.imgur.com/HY1J7qD.png)<br>
+
 <i>**그림 4.1** 중앙 집중형 제어를 나타내는 시퀀스 다이어그램</i>
 
 
@@ -32,7 +33,8 @@ tags:
 
 
 
-![4.2](https://i.imgur.com/P2tXEX9.png)
+![4.2](https://i.imgur.com/P2tXEX9.png)<br>
+
 <i>**그림 4.2** 분산 제어를 나타내는 시퀀스 다이어그램</i>
 
 
@@ -49,7 +51,8 @@ tags:
 
 ## 참가자의 생성과 삭제
 
-![4.3](https://i.imgur.com/ejXU93J.png)
+![4.3](https://i.imgur.com/ejXU93J.png)<br>
+
 <i>**그림 4.3** 참가자의 생성과 삭제</i>
 
 
@@ -64,7 +67,8 @@ tags:
 * 시퀀스 다이어그램은 **루프**와 **조건문**을 표현하는데 좋지 않다.
 * 루프와 조건문은 **교류 프레임(interaction frame)** 을 사용한다.
 
-![4.4](https://i.imgur.com/n2xjKcu.png)
+![4.4](https://i.imgur.com/n2xjKcu.png)<br>
+
 <i>**그림 4.4** 교류 프레임</i>
 
 

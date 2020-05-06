@@ -22,5 +22,6 @@ tags:
 * **아티팩트(artifact)** 란 소프트웨어의 물리적인 모습(manifestation)이며, 보통 파일을 말한다.
 * 일반적으로, 같은 논리 작업(task)을 수행하는 다수의 물리적 노드가 생기게 될 것이다.
 
-![8.1](https://i.imgur.com/wUm3rZC.png)
+![8.1](https://i.imgur.com/wUm3rZC.png)<br>
+
 <i>**그림 8.1** 배치 다이어그램의 예</i>
