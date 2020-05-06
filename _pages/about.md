@@ -4,7 +4,17 @@ permalink: /about/
 layout: single
 ---
 
-## anstjaos.github.io 블로그
+## Who am I??
 
-진짜 블로그인 <https://devinlife.com>을 방문해보자.
-이 곳에서 이 샘플 블로그를 같이 만들어보는 GitHub Pages 블로그 따라하기 시리즈의 모든 글을 볼 수 있다.
+* 2018
+  * 대경권 대학생 프로그래밍 경진대회 우수상
+  * 블록체인을 활용한 전자 투표 및 설문조사 시스템
+    * Back-end 개발, Python Flask
+  * 이데일리 코딩 챌린지 본선
+* 2019
+  * 머신러닝을 통한 음성 감정 분석 시스템
+    * 전체 개발, Python
+  * SW Maestro 10기 연수생
+    * Saficket 개발, Hyperledger Fabric Android Docker
+* 2020
+  * NHN Rookie 7기 입사
