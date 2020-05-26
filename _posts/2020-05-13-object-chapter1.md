@@ -18,7 +18,7 @@ tags:
 
 ## 티켓 판매 어플리케이션 구현하기
 
-![1.1.png](../images/object/1.1.png)
+![1.1.png](./images/object/1.1.png)
 <i>**그림 1.1** 너무 많은 클래스에 의존하는 Theater</i>
 
 티켓 판매 어플리케이션을 구현한다고 가정했을 때 전체 클래스 설계(그림 1.1)은 잘 돌아갈 것이다.
@@ -69,14 +69,14 @@ Theater 클래스의 enter 메소드가 수행하는 일을 말로 풀어보자.
 ### 자율성을 높이자
 
 개념적이나 물리적으로 객체 내부의 세부적인 사항을 감추는 것을 **캡슐화(encapsulation)** 라고 한다. 캡슐화의 목적은 변경하기 쉬운 객체를 만드는 것이다. 캡슐화를 통해 객체 내부로의 접근을 제한하면 변경 용이성이 증가한다.
-![1.2.png](../images/object/1.2.png)
+![1.2.png](./images/object/1.2.png)
 <i>**그림 1.2** Theater의 결합도를 낮춘 설계</i>
 
 코드를 변경하여 TicketSeller의 자율성을 높여 Theater의 결합도를 낮췄다.
 Theater는 오직 TicketSeller의 **인터페이스(interface)** 에만 의존한다. TicketSeller가 내부에 TicektOffice 인스턴스를 포함하고 있다는 사실은 **구현(implementation)** 의 영역에 속한다. 객체를 인터페이스와 구현으로 나누고 **인터페이스만 공개하는 것**은 객체 사이의 결합도를 낮추고 변경하기 쉬운 코드로 작성하기 위해 따라야 하는 가장 기본적인 설계 원칙이다.
 
 다음으로 Audience의 캡슐화를 개선하자.
-![1.3.png](../images/object/1.3.png)
+![1.3.png](./images/object/1.3.png)
 <i>**그림 1.3** 자율적인 Audience와 TicketSeller로 구성된 설계</i>
 
 코드를 수정한 결과, TicketSeller와 Audience 사이의 결합도가 낮아졌다. 또한 내부 구현이 캡슐화됐으므로 Audience의 구현을 수정하더라도 TicketSeller에는 영향을 미치지 않는다.
@@ -110,9 +110,9 @@ Theater는 오직 TicketSeller의 **인터페이스(interface)** 에만 의존�
 ### 책임의 이동
 
 절차지향과 객체지향 방식 사이에 근본적인 차이를 만드는 것은 **책임의 이동(shift of responsibility)** 이다.
-![1.4.png](../images/object/1.4.png)
+![1.4.png](./images/object/1.4.png)
 <i>**그림 1.4** 책임이 중앙집중된 절차적 프로그래밍</i>
-![1.5.png](../images/object/1.5.png)
+![1.5.png](./images/object/1.5.png)
 <i>**그림 1.5** 책임이 분산된 객체지향 프로그래밍</i>
 
 변경 전의 절차적 설계에서는 Theater가 전체적인 작업을 도맡아 처리했다. 변경 후의 객체지향 설계에서는 각 객체가 자신이 맡은 일을 스스로 처리했다. Theater에 몰려 있던 책임이 개별 객체로 이동하였다. 이것이 바로 **책임의 이동**이 의미하는 것이다.
