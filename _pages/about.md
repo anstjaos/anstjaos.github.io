@@ -1,10 +1,8 @@
 ---
-title: "이 블로그 설명서"
+title: "Who am I??"
 permalink: /about/
 layout: single
 ---
-
-## Who am I??
 
 * 2018
   * 대경권 대학생 프로그래밍 경진대회 우수상
