@@ -1,6 +1,6 @@
 ---
-title: "[Object] 6장"
-excerpt: "Object 6장 요약"
+title: "Promise, Async, Await"
+excerpt: "promise, async, await 사용 방법"
 
 categories:
 - Study 
