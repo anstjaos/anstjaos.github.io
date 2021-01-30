@@ -1,0 +1,990 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.17.2 by Michael Rose
+  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Javascript 기본 - 노력하는 개발자의 블로그</title>
+<meta name="description" content="Javascript 기본 교육 정리">
+
+
+  <meta name="author" content="anstjaos">
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="노력하는 개발자의 블로그">
+<meta property="og:title" content="Javascript 기본">
+<meta property="og:url" content="http://localhost:4000/study/javascript-basic/">
+
+
+  <meta property="og:description" content="Javascript 기본 교육 정리">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2020-01-20T00:00:00+09:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/study/javascript-basic/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "anstjaos",
+      "url": "http://localhost:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="노력하는 개발자의 블로그 Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          노력하는 개발자의 블로그
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/about/" >About</a>
+            </li><li class="masthead__menu-item">
+              <a href="/categories/" >Categories</a>
+            </li><li class="masthead__menu-item">
+              <a href="/tags/" >Tags</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person">
+
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name">anstjaos</h3>
+    
+    
+      <div class="author__bio" itemprop="description">
+        <p>열심히 <strong>공부하는</strong> 개발자입니다</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">Republic of Korea</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="mailto:vv_eros@naver.com" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> Email</a></li>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <li><a href="https://github.com/anstjaos" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+          
+        
+          
+            <li><a href="https://instagram.com/document_k" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+          
+        
+      
+
+      
+
+      
+        <li>
+          <a href="mailto:moonseo.kim@nhn.com">
+            <meta itemprop="email" content="moonseo.kim@nhn.com" />
+            <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> Email
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Javascript 기본">
+    <meta itemprop="description" content="Javascript 기본 교육 정리">
+    <meta itemprop="datePublished" content="2020-01-20T00:00:00+09:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Javascript 기본
+</h1>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <h4 id="출처-nhn-기술교육---javascript-기본-김성호-책임님">출처: NHN 기술교육 - JavaScript 기본 (김성호 책임님)</h4>
+
+<h3 id="웹-언어를-배울-때-todolist를-만들자">웹 언어를 배울 때 Todolist를 만들자</h3>
+
+<h4 id="spec">SPEC</h4>
+
+<ul>
+  <li>TODO 추가, 완료할 수 있다.</li>
+  <li>TODO는 미완료 상태와 완료된 상태 디자인 적용</li>
+  <li>종류에 따라 갯수 카운팅(전체/활성/완료)</li>
+  <li>TODO를 삭제할 수 있다.</li>
+  <li>종류별로 보기(전체/활성/완료)</li>
+</ul>
+
+<h3 id="자바스크립트의-사용">자바스크립트의 사용</h3>
+
+<ul>
+  <li>
+    <p>스크립트 파일을 인클루드하는 방식</p>
+
+    <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">""</span><span class="nt">&gt;&lt;/script&gt;</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>스크립트를 직접 코딩하는 방식</p>
+  </li>
+</ul>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;script&gt;</span>
+	<span class="o">~~~</span>
+<span class="nt">&lt;/script&gt;</span>
+</code></pre></div></div>
+
+<ul>
+  <li>‘use strict’;는 항상 써주는게 좋다.</li>
+</ul>
+
+<h3 id="스크립트와-dom과의-상호작용-시점">스크립트와 DOM과의 상호작용 시점</h3>
+
+<ul>
+  <li>DOM: 자바스크립트로 HTML 문서를 다룰 수 있게 브라우저 환경 제공하는 API</li>
+  <li>브라우저는 HTML문서를 첫줄부터 순서대로 파싱하며 필요한 정보를 수집하고 렌더링</li>
+  <li>JS가 평가되는 시점에 Document에 렌더링되어 있는 시점</li>
+</ul>
+
+<h2 id="todo-추가하기">TODO 추가하기</h2>
+
+<ul>
+  <li>DOM 상의 엘리먼트 탐색</li>
+  <li>엘리먼트에 이벤트 핸들러 적용</li>
+</ul>
+
+<h3 id="엘리먼트-찾기">엘리먼트 찾기</h3>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">myId</span><span class="dl">'</span><span class="p">);</span>
+<span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="dl">'</span><span class="s1">div</span><span class="dl">'</span><span class="p">);</span>
+<span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByClassName</span><span class="p">(</span><span class="dl">'</span><span class="s1">myClass</span><span class="dl">'</span><span class="p">);</span>
+</code></pre></div></div>
+
+<h4 id="document">document</h4>
+
+<ul>
+  <li>브라우저상의 HTML 문서를 모델링한 객체</li>
+  <li>DOM API의 시작점</li>
+</ul>
+
+<h4 id="htmlcollection">HTMLCollection</h4>
+
+<ul>
+  <li>유사 배열 : Array 비슷하게 사용가능하지만 Array가 아님
+    <ul>
+      <li>숫자로 인덱싱 가능, length 존재</li>
+      <li>Array가 아니라서 Array의 API를 사용할 수 없음</li>
+      <li>Array의 API를 사용하려면 Array로 변환한 뒤 사용</li>
+    </ul>
+  </li>
+  <li>live한 컬렉션</li>
+</ul>
+
+<h4 id="엘리먼트안의-엘리먼트를-찾을-수-있다">엘리먼트안의 엘리먼트를 찾을 수 있다.</h4>
+
+<h3 id="엘리먼트에-이벤트-핸들러-적용">엘리먼트에 이벤트 핸들러 적용</h3>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">element</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="dl">"</span><span class="s2">click</span><span class="dl">"</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+
+<span class="p">},</span> <span class="kc">false</span><span class="p">);</span>
+</code></pre></div></div>
+
+<h4 id="parameters">Parameters</h4>
+
+<ol>
+  <li>이벤트명 ex) click, focus, mouseover, etc…</li>
+  <li>이벤트 핸들러</li>
+  <li>캡쳐링을 사용할지 여부</li>
+</ol>
+
+<p>이벤트 핸들러 안에서의 <strong>this</strong>는 이벤트가 적용된 엘리먼트</p>
+
+<h3 id="엘리먼트-이벤트-해제">엘리먼트 이벤트 해제</h3>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">element</span><span class="p">.</span><span class="nx">removeEventListener</span><span class="p">(</span><span class="dl">"</span><span class="s2">click</span><span class="dl">"</span><span class="p">,</span> <span class="nx">handler</span><span class="p">,</span> <span class="kc">false</span><span class="p">);</span>
+</code></pre></div></div>
+
+<h4 id="parameters-1">Parameters</h4>
+
+<ol>
+  <li>이벤트명 ex) click, focus, mouseover, etc…</li>
+  <li>이벤트 핸들러(함수의 참조를 저장해놔야함)</li>
+  <li>캡쳐링을 사용할지 여부</li>
+</ol>
+
+<h3 id="동적으로-엘리먼트-만들기">동적으로 엘리먼트 만들기</h3>
+
+<p><strong>document.createElement(tagName)</strong></p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">newDiv</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="dl">"</span><span class="s2">div</span><span class="dl">"</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">newP</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="dl">"</span><span class="s2">p</span><span class="dl">"</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p><strong>document.createTextNode(text)</strong></p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">newText</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createTextNode</span><span class="p">(</span><span class="dl">"</span><span class="s2">텍스트 노드</span><span class="dl">"</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">newText2</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createTextNode</span><span class="p">(</span><span class="dl">"</span><span class="s2">HELLO WORLD</span><span class="dl">"</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>만들고 <strong>BODY</strong> 엘리먼트에 붙이지 않으면 화면에 나타나지 않는다.</p>
+
+<h3 id="엘리먼트에-자식-엘리먼트-추가하기">엘리먼트에 자식 엘리먼트 추가하기</h3>
+
+<p><strong>element.appendChild(node)</strong></p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">newDiv</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="dl">"</span><span class="s2">div</span><span class="dl">"</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">newP</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="dl">"</span><span class="s2">p</span><span class="dl">"</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">newText</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createTextNode</span><span class="p">(</span><span class="dl">"</span><span class="s2">HELLO ROOKIES</span><span class="dl">"</span><span class="p">);</span>
+
+<span class="nx">newP</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">newText</span><span class="p">);</span>
+<span class="nx">newDiv</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">newP</span><span class="p">);</span>
+
+<span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">newDiv</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>After</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;body&gt;</span>
+  <span class="nt">&lt;div&gt;</span>
+    <span class="nt">&lt;p&gt;</span>HELLO ROOKIES<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+</code></pre></div></div>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">childNodes</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="nx">tagName</span> <span class="o">==</span> <span class="dl">'</span><span class="s1">DIV</span><span class="dl">'</span><span class="p">;</span>
+<span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">childNodes</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="nx">childNodes</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="nx">tagName</span> <span class="o">==</span> <span class="dl">'</span><span class="s1">P</span><span class="dl">'</span><span class="p">;</span>
+<span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">childNodes</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="nx">childNodes</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="nx">childNodes</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="nx">nodeValue</span> <span class="o">==</span> <span class="dl">'</span><span class="s1">HELLO ROOKIES</span><span class="dl">'</span><span class="p">;</span>
+</code></pre></div></div>
+
+<h3 id="자식-엘리먼트-삭제하기">자식 엘리먼트 삭제하기</h3>
+
+<p><strong>element.removeChild(node);</strong></p>
+
+<p>지우려는 대상의 참조를 들고있어야 한다.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">newDiv</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="dl">"</span><span class="s2">div</span><span class="dl">"</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">newP</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="dl">"</span><span class="s2">p</span><span class="dl">"</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">newText</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createTextNode</span><span class="p">(</span><span class="dl">"</span><span class="s2">HELLO ROOKIES</span><span class="dl">"</span><span class="p">);</span>
+
+<span class="nx">newP</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">newText</span><span class="p">);</span>
+<span class="nx">newDiv</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">newP</span><span class="p">);</span>
+
+<span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">newDiv</span><span class="p">);</span> <span class="c1">//추가했지만</span>
+<span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">removeChild</span><span class="p">(</span><span class="nx">newDiv</span><span class="p">);</span> <span class="c1">// 바로 삭제됨</span>
+</code></pre></div></div>
+
+<h3 id="innerhtml을-이용해-동적으로-엘리먼트-만들기">innerHTML을 이용해 동적으로 엘리먼트 만들기</h3>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">element</span><span class="p">.</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">&lt;div&gt;text&lt;/div&gt;</span><span class="dl">'</span><span class="p">;</span>
+</code></pre></div></div>
+
+<ul>
+  <li>html 텍스트를 이용해 자식 노드를 생성</li>
+</ul>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">&lt;div&gt;&lt;p&gt;HELLO ROOKIES&lt;/p&gt;&lt;/div&gt;</span><span class="dl">"</span><span class="p">;</span>
+</code></pre></div></div>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;body&gt;</span>
+  <span class="nt">&lt;div&gt;</span>
+    <span class="nt">&lt;p&gt;</span>HELLO ROOKIES<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+</code></pre></div></div>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">element</span><span class="p">.</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">&lt;div&gt;text&lt;/div&gt;</span><span class="dl">'</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p><strong>장점</strong></p>
+
+<ul>
+  <li>새로운 엘리먼트들을 만드는 상황에서는 보통 제일 빠름(엔진 내부에서 생성)</li>
+  <li>DOM API를 이용하는것보다 편한 경우가 많다.</li>
+</ul>
+
+<p><strong>단점</strong></p>
+
+<ul>
+  <li>엘리먼트에 작은 변화를 주는 경우 비효율적(돔트리를 모두 지우고 다시 만듬)</li>
+</ul>
+
+<p><strong>주의점</strong></p>
+
+<p>값이 세팅 될때마다 모든 자식 엘리먼트를 지우고 다시 만들기 때문에 Addition assginment(+=) 연산자를 직접 사용하는것을 피해야 한다.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">//wrong</span>
+<span class="nx">div</span><span class="p">.</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">&lt;p&gt;text1&lt;/p&gt;</span><span class="dl">'</span><span class="p">;</span>
+    <span class="c1">// 자식으로 &lt;p&gt;text1&lt;/p&gt; 을 만든다.</span>
+<span class="nx">div</span><span class="p">.</span><span class="nx">innerHTML</span> <span class="o">+=</span> <span class="dl">'</span><span class="s1">&lt;p&gt;text2&lt;/p&gt;</span><span class="dl">'</span><span class="p">;</span>
+    <span class="c1">// innerHTML === '&lt;p&gt;text1&lt;/p&gt;&lt;p&gt;text2&lt;/p&gt;'</span>
+    <span class="c1">// 모두 지우고 &lt;p&gt;text1&lt;/p&gt; 다시만들고 &lt;p&gt;text2&lt;/p&gt;도 만든다.</span>
+
+<span class="c1">//correct</span>
+<span class="kd">var</span> <span class="nx">content</span> <span class="o">=</span> <span class="dl">''</span><span class="p">;</span>
+
+<span class="c1">// HTML 스트링을 미리 만든다.</span>
+<span class="nx">content</span> <span class="o">+=</span> <span class="dl">'</span><span class="s1">&lt;p&gt;text1&lt;/p&gt;</span><span class="dl">'</span><span class="p">;</span> <span class="c1">// 루프에서 사용된다고 가정</span>
+<span class="nx">content</span> <span class="o">+=</span> <span class="dl">'</span><span class="s1">&lt;p&gt;text2&lt;/p&gt;</span><span class="dl">'</span><span class="p">;</span>
+
+<span class="nx">div</span><span class="p">.</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="nx">content</span><span class="p">;</span> <span class="c1">// innerHTML 할당은 한번만</span>
+</code></pre></div></div>
+
+<p>값이 할당되면 다 지워버리고 새로 할당된 엘리먼트를 다시 만들기 때문에 느리다.</p>
+
+<h3 id="다른-dom-api-정보">다른 DOM API 정보</h3>
+
+<p>DOM API 정보 검색은</p>
+
+<p>Mozilla developer network(구글에서 mdn 검색) 활용</p>
+
+<p><strong><a href="http://developer.mozilla.org/">http://developer.mozilla.org</a></strong></p>
+
+<ul>
+  <li>웹플랫폼 -&gt; API와 DOM매뉴에서 element와 node파트 확인</li>
+  <li>웹 기술에 대한 거의 모든 정보를 얻을 수 있다.</li>
+</ul>
+
+<h2 id="todo-완료하기">TODO 완료하기</h2>
+
+<p><strong>배울 내용</strong></p>
+
+<ul>
+  <li>체크박스 다루기</li>
+  <li>개발자 도구를 이용한 디버깅</li>
+  <li>이벤트 전파</li>
+  <li>자바스크립트를 이용한 CSS 제어</li>
+</ul>
+
+<h3 id="체크박스-다루기">체크박스 다루기</h3>
+
+<p><strong>html</strong></p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">value=</span><span class="s">"someValue"</span> <span class="na">checked</span> <span class="nt">/&gt;</span>
+</code></pre></div></div>
+
+<p><strong>js</strong></p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">input</span><span class="p">.</span><span class="nx">value</span> <span class="c1">// 값</span>
+<span class="nx">input</span><span class="p">.</span><span class="nx">checked</span> <span class="c1">// 체크여부(radio, checkbox)</span>
+<span class="nx">input</span><span class="p">.</span><span class="nx">type</span> <span class="c1">// HTML 어트리뷰트에 접근한다.(스펙상 정의된 어트리뷰트)</span>
+<span class="nx">input</span><span class="p">.</span><span class="nx">focus</span><span class="p">()</span> <span class="c1">// 포커스를 준다.</span>
+<span class="nx">input</span><span class="p">.</span><span class="nx">blur</span><span class="p">()</span> <span class="c1">//포커스를 해제한다.</span>
+<span class="c1">// etc...</span>
+</code></pre></div></div>
+
+<h3 id="이벤트의-전파">이벤트의 전파</h3>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;body&gt;</span>
+  <span class="nt">&lt;ul&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="nt">/&gt;</span> TODO<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+</code></pre></div></div>
+
+<p>이벤트는 특정한 방향으로 전파된다</p>
+
+<p>자식에 이벤트가 발생했을 때 내가 먼저</p>
+
+<ul>
+  <li>위에서 아래로 =&gt; <strong>Capturing</strong></li>
+</ul>
+
+<p>body -&gt; ul -&gt; li -&gt; input</p>
+
+<p>자식에 이벤트가 발생했을 때 자식 먼저</p>
+
+<ul>
+  <li>아래에서 위로 =&gt; <strong>Bubbling</strong></li>
+</ul>
+
+<p>input -&gt; li -&gt; ul -&gt; body</p>
+
+<p>순서: 캡처링 -&gt; 실제 대상 엘리먼트 -&gt; 버블링</p>
+
+<p>input 클릭시 버블링 발생 -&gt; 버튼 활성화 -&gt; li 이벤트 발생 -&gt; 버튼 해제</p>
+
+<p><strong>이벤트의 전파 제어</strong></p>
+
+<ul>
+  <li>addEventListener의 세번째 인자로 캡처링/버블링 이벤트를 선택할 수 있다. <code class="language-plaintext highlighter-rouge">true</code> 면 캡처링</li>
+  <li>이벤트 핸들러에 첫번째 인자로 넘어오는 Event객체로 전파를 차단할 수 있다.</li>
+</ul>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">useCapturing</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+
+<span class="nx">element</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="dl">'</span><span class="s1">click</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">eventObject</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">eventObject</span><span class="p">.</span><span class="nx">stopPropagation</span><span class="p">();</span> <span class="c1">// 캡처링이나 버블링을 취소한다.(이벤트 전파를 차단한다)</span>
+
+  <span class="c1">//etc</span>
+  <span class="nx">eventObject</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">();</span> <span class="c1">// 디폴트 동작을 취소한다.(ex. 링크 이동 차단)</span>
+  <span class="c1">//체크 박스의 클릭을 취소하는경우 브라우저마다 다른 동작을 한다.</span>
+  <span class="c1">//그밖에 많에 정보를 포함</span>
+<span class="p">},</span> <span class="nx">useCapturing</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>이벤트 객체에는 흐름제어외에도 많은 유용한 정보를 포함하고 있다. 그 내용은 이벤트 타입에 따라 조금씩 다르다.</p>
+
+<h3 id="css-제어">CSS 제어</h3>
+
+<p>엘리먼트 객체의 style 어트리뷰트 이용해 CSS를 적용한다.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// css 속성을 그대로 사용함</span>
+<span class="nx">element</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">width</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">30px</span><span class="dl">'</span><span class="p">;</span>
+<span class="nx">element</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">height</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">100px</span><span class="dl">'</span><span class="p">;</span>
+
+<span class="nx">element</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">block</span><span class="dl">'</span><span class="p">;</span>
+<span class="nx">element</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">none</span><span class="dl">'</span><span class="p">;</span>
+
+<span class="c1">// background-color같이 하이픈으로 이어진 속성은 카멜케이스로 변경</span>
+<span class="nx">element</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">backgroundColor</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">#f00</span><span class="dl">'</span><span class="p">;</span>
+
+<span class="c1">// border같은 short-hand 속성도 그대로 사용함.</span>
+<span class="nx">element</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">border</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">1px solid red</span><span class="dl">"</span><span class="p">;</span>
+
+<span class="c1">// 적용 가능 목록 확인</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">element</span><span class="p">.</span><span class="nx">style</span><span class="p">);</span>
+</code></pre></div></div>
+
+<h3 id="엘리먼트에-css-아이디--클래스-적용">엘리먼트에 CSS 아이디 &amp; 클래스 적용</h3>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;style&gt;</span>
+  <span class="nc">.myClass</span> <span class="p">{</span><span class="nl">border</span><span class="p">:</span><span class="m">1px</span> <span class="nb">solid</span> <span class="m">#f00</span><span class="p">}</span>
+  <span class="nf">#myId</span> <span class="p">{</span><span class="nl">padding</span><span class="p">:</span> <span class="m">5px</span><span class="p">}</span>
+<span class="nt">&lt;/style&gt;</span>
+</code></pre></div></div>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">//HTML의 class속성과 동일</span>
+<span class="nx">element</span><span class="p">.</span><span class="nx">className</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">myClass</span><span class="dl">'</span><span class="p">;</span>
+
+<span class="c1">//다중 적용시 띄어쓰기</span>
+<span class="nx">element</span><span class="p">.</span><span class="nx">className</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">myClass1 myClass2</span><span class="dl">'</span><span class="p">;</span>
+
+<span class="c1">//아이디도 동일하게 적용가능(다중 적용 X)</span>
+<span class="nx">element</span><span class="p">.</span><span class="nx">id</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">myId</span><span class="dl">'</span><span class="p">;</span>
+</code></pre></div></div>
+
+<ul>
+  <li><strong>아이디</strong> 는 <strong>한 개의</strong> 엘리먼트에만 지정이 가능하며 엘리먼트당 <strong>한 개만</strong> 적용된다.</li>
+  <li><strong>클래스</strong> 는 여러 개의 엘리먼트에 적용이 가능하고 한 엘리먼트에 다중 적용이 가능하다.</li>
+  <li>디자인 적용은 <strong>클래스</strong> 를 이용하는것을 추천(재사용)</li>
+  <li>아이디는 엘리먼트를 찾기 위한 식별 용도로만 사용한다.</li>
+</ul>
+
+<h2 id="todo-카운팅">TODO 카운팅</h2>
+
+<h3 id="queryselector">querySelector</h3>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="dl">'</span><span class="s1">.myClass</span><span class="dl">'</span><span class="p">);</span> <span class="c1">// 처음 찾은 한개만 리턴</span>
+<span class="nb">document</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="dl">'</span><span class="s1">.myClass</span><span class="dl">'</span><span class="p">);</span> <span class="c1">// 해당되는 모든 엘리먼트 찾음</span>
+</code></pre></div></div>
+
+<ul>
+  <li>element, document 모두 사용가능</li>
+  <li>CSS 셀렉터를 이용해 엘리먼트를 찾는다.</li>
+  <li>jQuery와 비슷</li>
+  <li>최신브라우저들과 IE8 이상부터 지원</li>
+</ul>
+
+<h2 id="todo-삭제하기">TODO 삭제하기</h2>
+
+<h3 id="엘리먼트-노드-속성">엘리먼트 노드 속성</h3>
+
+<p>DOM상의 엘리먼트들은 트리구조로 서로 연결되어 있다. 그래서 엘리먼트의 노드관련 속성들로 연결되어있는 엘리먼트들을 탐색할 수 있다.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">element</span><span class="p">.</span><span class="nx">firstChild</span> <span class="c1">// 첫번째 자식</span>
+<span class="nx">element</span><span class="p">.</span><span class="nx">lastChild</span> <span class="c1">// 마지막 자식</span>
+<span class="nx">element</span><span class="p">.</span><span class="nx">parentNode</span> <span class="c1">// 부모</span>
+<span class="nx">element</span><span class="p">.</span><span class="nx">nextSibling</span> <span class="c1">// 다음 형제</span>
+<span class="nx">element</span><span class="p">.</span><span class="nx">previousSibling</span>  <span class="c1">// 이전 형제</span>
+<span class="nx">element</span><span class="p">.</span><span class="nx">childNodes</span> <span class="c1">// 자식들을 모두 담고 있는 HTMLCollection</span>
+</code></pre></div></div>
+
+<h2 id="전체미완완료-뷰-구분">전체/미완/완료 뷰 구분</h2>
+
+<h3 id="css-셀렉터를-이용한-구현">CSS 셀렉터를 이용한 구현</h3>
+
+<ul>
+  <li>완료된 Todo li에는 complete이란 클래스가 추가되도록 작업이 되어 있다.</li>
+  <li>Todolist ul에 필요에 따라 hideComplete나 hideIncomplete 클래스를 적용한다.</li>
+</ul>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;style&gt;</span>
+  <span class="nc">.hideIncomplete</span> <span class="nt">li</span><span class="nd">:not</span><span class="o">(</span><span class="nc">.complete</span><span class="o">)</span> <span class="p">{</span><span class="nl">display</span><span class="p">:</span><span class="nb">none</span><span class="p">}</span>
+  <span class="nc">.hideComplete</span> <span class="nt">li</span><span class="nc">.complete</span> <span class="p">{</span><span class="nl">display</span><span class="p">:</span><span class="nb">none</span><span class="p">}</span>
+<span class="nt">&lt;/style&gt;</span>
+</code></pre></div></div>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;ul</span> <span class="na">id=</span><span class="s">"todolist"</span> <span class="na">class=</span><span class="s">"hideComplete"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;li&gt;</span>TODO1<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"complete"</span><span class="nt">&gt;</span>TODO2<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>TODO3<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+</code></pre></div></div>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/tags/#javascript" class="page__taxonomy-item" rel="tag">Javascript</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#web" class="page__taxonomy-item" rel="tag">Web</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/categories/#study" class="page__taxonomy-item" rel="tag">Study</a>
+    
+    </span>
+  </p>
+
+
+        
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2020-01-20T00:00:00+09:00">January 20, 2020</time></p>
+        
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=Javascript+%EA%B8%B0%EB%B3%B8%20http%3A%2F%2Flocalhost%3A4000%2Fstudy%2Fjavascript-basic%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fstudy%2Fjavascript-basic%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fstudy%2Fjavascript-basic%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/study/html-css-basic/" class="pagination--pager" title="HTML/CSS Basic
+">Previous</a>
+    
+    
+      <a href="/study/bash/" class="pagination--pager" title="Bash 프로그래밍
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You may also enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/study/promise-async-await/" rel="permalink">Promise, Async, Await
+</a>
+      
+    </h2>
+    <!--
+    
+    -->
+    
+      <p class="page__meta"><i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i> January 14 2021</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">promise, async, await 사용 방법
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/1d1c_1/" rel="permalink">1d1c_1
+</a>
+      
+    </h2>
+    <!--
+    
+    -->
+    
+      <p class="page__meta"><i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i> June 07 2020</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">06.01
+
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/study/object-chapter9/" rel="permalink">[Object] 9장
+</a>
+      
+    </h2>
+    <!--
+    
+    -->
+    
+      <p class="page__meta"><i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i> June 04 2020</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Object 9장 요약
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/study/object-chapter10/" rel="permalink">[Object] 10장
+</a>
+      
+    </h2>
+    <!--
+    
+    -->
+    
+      <p class="page__meta"><i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i> June 04 2020</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Object 10장 요약
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+      
+        
+      
+        
+          <li><a href="https://github.com/anstjaos" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+      
+        
+      
+        
+          <li><a href="https://instagram.com/document_k" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+        
+      
+    
+
+    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2021 anstjaos. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+  <script src="https://kit.fontawesome.com/4eee35f757.js"></script>
+
+
+
+
+
+
+
+    
+  <script>
+    var disqus_config = function () {
+      this.page.url = "http://localhost:4000/study/javascript-basic/";  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = "/study/javascript-basic"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    (function() { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = 'https://github-comments.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+  
+
+
+
+
+
+  </body>
+</html>

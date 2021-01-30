@@ -1,0 +1,835 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.17.2 by Michael Rose
+  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>[UML Distilled] 2장 - 노력하는 개발자의 블로그</title>
+<meta name="description" content="UML Distilled 2장 요약">
+
+
+  <meta name="author" content="anstjaos">
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="노력하는 개발자의 블로그">
+<meta property="og:title" content="[UML Distilled] 2장">
+<meta property="og:url" content="http://localhost:4000/study/uml-distilled-chapter2/">
+
+
+  <meta property="og:description" content="UML Distilled 2장 요약">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2020-03-26T00:00:00+09:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/study/uml-distilled-chapter2/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "anstjaos",
+      "url": "http://localhost:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="노력하는 개발자의 블로그 Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          노력하는 개발자의 블로그
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/about/" >About</a>
+            </li><li class="masthead__menu-item">
+              <a href="/categories/" >Categories</a>
+            </li><li class="masthead__menu-item">
+              <a href="/tags/" >Tags</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person">
+
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name">anstjaos</h3>
+    
+    
+      <div class="author__bio" itemprop="description">
+        <p>열심히 <strong>공부하는</strong> 개발자입니다</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">Republic of Korea</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="mailto:vv_eros@naver.com" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> Email</a></li>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <li><a href="https://github.com/anstjaos" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+          
+        
+          
+            <li><a href="https://instagram.com/document_k" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+          
+        
+      
+
+      
+
+      
+        <li>
+          <a href="mailto:moonseo.kim@nhn.com">
+            <meta itemprop="email" content="moonseo.kim@nhn.com" />
+            <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> Email
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="[UML Distilled] 2장">
+    <meta itemprop="description" content="UML Distilled 2장 요약">
+    <meta itemprop="datePublished" content="2020-03-26T00:00:00+09:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">[UML Distilled] 2장
+</h1>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <h1 id="2-개발-공정">2. 개발 공정</h1>
+
+<h4 id="uml을-사용하는-방법은-사용하는-공정의-형식에-따라-달라진다">UML을 사용하는 방법은 사용하는 <strong>공정의 형식</strong>에 따라 달라진다.</h4>
+
+<h2 id="반복-공정과-폭포수-공정">반복 공정과 폭포수 공정</h2>
+
+<ul>
+  <li>두 공정의 근본적인 차이점은, <strong>하나의 프로젝트를 어떻게 작은 덩어리</strong>로 쪼갤 것인가에 있다.</li>
+</ul>
+
+<h3 id="폭포수-방식waterfall-style">폭포수 방식(Waterfall style)</h3>
+
+<ul>
+  <li><strong>액티비티</strong> 기준으로 프로젝트를 나눈다.</li>
+  <li>액티비티는 <strong>분석(analysis), 설계(design), 개발(coding), 테스트(testing)</strong> 가 있다.</li>
+  <li>각 단계 사이에 어떤 형태의 <strong>공식 산출물</strong>이 있다.
+    <ul>
+      <li>종종 앞 단계로 돌아가는 경우가 있으니 가능한 최소화되어야 한다.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="반복-방식iterative-style">반복 방식(Iterative style)</h3>
+
+<ul>
+  <li><strong>기능의 부분 집합</strong>으로 프로젝트를 나눈다.</li>
+  <li>전체 기능을 등분하여 각 <strong>반복마다 요구 사항을 등분한 만큼 개발 사이클(분석, 설계, 개발, 테스트)을 진행</strong>한다.</li>
+  <li>반복을 시작하기 전에 일정 형태의 <strong>탐색 액티비티</strong>가 있다.
+    <ul>
+      <li>요구 사항을 반복 작업으로 나눌 수 있는 정도의 <strong>개략적인 관점</strong>을 가지게 된다.</li>
+    </ul>
+  </li>
+  <li>일반적인 기술로는 <strong>시간 구획(time boxing)</strong> 을 이용한다.
+    <ul>
+      <li>반복 작업을 정해진 시간 안에 하는 것이다.</li>
+      <li>개발에 <strong>일정한 리듬</strong>을 갖도록 한다.</li>
+    </ul>
+  </li>
+  <li>반복 개발에 대한 가장 일반적인 고민은 <strong>재작업 문제</strong>이다.</li>
+  <li>기존 코드를 재작업 하는 것이 종종 효과적이다.
+    <ul>
+      <li><strong>자동 회귀 테스트(Automated regression tests)</strong>
+        <ul>
+          <li>무언가를 변경하고 있을 때 발행할 수 있는 모든 결함을 빨리 감지할 수 있도록 도와준다.</li>
+          <li>단위 테스트 코드의 크기는 완성 코드와 비슷한 크기여야 한다.</li>
+        </ul>
+      </li>
+      <li><strong>리팩토링(Refactoring)</strong>
+        <ul>
+          <li>기존의 소프트웨어를 변경하는 체계적인 기술이다.</li>
+          <li>코드 베이스에 행동을 변화시키지 않는(behavior preserving) 작은 변화를 연속해서 가하여 이루어진다.</li>
+        </ul>
+      </li>
+      <li><strong>연속적 통합(Continuous integration)</strong>
+        <ul>
+          <li>고통스러운 통합 사이클을 피하기 위해 팀을 계속해서 동기화하는 것이다.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p><code class="language-plaintext highlighter-rouge">단계별 출시(staged delivery)</code> : 분석과 개략적인 설계는 <strong>폭포수 방식</strong>으로 하고 개발과 테스트는 <strong>반복 개발</strong>로 나누어 진행한다.</p>
+
+<h2 id="예측-계획법과-적응-계획법">예측 계획법과 적응 계획법</h2>
+
+<ul>
+  <li>폭포수 개발 방식이 계속 사용되는 한 가지 이유는 <strong>예측 가능성(predicatability)</strong> 을 기대하기 때문이다.</li>
+</ul>
+
+<h3 id="예측-계획법predictive-planning">예측 계획법(predictive planning)</h3>
+
+<ul>
+  <li>앞으로 어떤 것들을 해야 하는지 알기 위해서 <strong>프로젝트 초기에 예측</strong>한다.</li>
+  <li>프로젝트의 나머지 부분을 적절한 수준의 정확도로 평가할 수 있는 지점까지 갈 수 있다.</li>
+  <li>예측 기획법을 이용하면 프로젝트는 두 단계로 나누어진다.
+    <ol>
+      <li>계획을 제안하는 것, 예측하기 힘들다.</li>
+      <li>계획이 자리 잡았기 때문에 훨씬 더 예측하기 쉽다.</li>
+    </ol>
+  </li>
+  <li>확실한 계획이 자리 잡으면 <strong>편차가 적어지기를 기대</strong>하는 것이다.</li>
+  <li>프로젝트들이 예측 가능한 가에 대한 논쟁의 중심에는 <strong>요구 사항 분석</strong>이 있다.</li>
+  <li>프로젝트의 복잡도를 증가시키는 특별한 원인 중의 하나는 <strong>시스템의 요구사항을 이해하기가 어렵다</strong>는 것이다.</li>
+  <li>프로젝트의 후반부에서 요구 사항이 변경되는 것인 <strong>요구 사항 흔들기(requirements churn)</strong> 가 문제다.</li>
+  <li>한 가지 해결책은 <strong>요구 사항 공정 자체에 더 많은 노력을 기울이는 것</strong>이다.</li>
+  <li><strong>고정 비용 / 고정 범위(fixed-price / fixed-scope)</strong> 계약을 맺을 수 있다.
+    <ul>
+      <li>어떤 것을 개발할 것이며, 얼마나 비용이 들고 언제 공급할 수 있을지를 정확히 알려준다.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="적응-계획법adaptive-planning">적응 계획법(adaptive planning)</h3>
+
+<ul>
+  <li>예측 계획법을 사용할 수 있을 정도로 요구 사항을 고정시키기는 너무나 힘든 프로젝트가 많다.</li>
+  <li><strong>적응 계획법</strong>에서는 예측이라는 것을 환상으로 본다.</li>
+  <li>예측 계획법을 사용한 프로젝트와의 차이점은 <strong>‘프로젝트가 어떻게 되어 가고 있는가.’</strong> 에 대해 사람들이 이야기하는 다양한 방법에서 드러난다.</li>
+  <li><strong>고정 비용 / 가변 범위(fixed-price / variable-scope)</strong> 계약을 맺을 수 있다.</li>
+</ul>
+
+<hr />
+
+<ul>
+  <li><strong>적응 계획법</strong>의 접근 방식보다는 <strong>예측 계획법</strong>의 접근 방식이 더 바람직하다.</li>
+  <li>하지만, <strong>예측 가능성은 엄밀하고 정확하며, 안정된 요구사항에 의존</strong>한다.</li>
+  <li><strong>요구 사항을 고정시킬 수 없다면</strong>, 예측 계획법은 모래 위에 지은 것이며, 프로젝트가 잘못된 길로 갈 가능성이 크다.</li>
+</ul>
+
+<blockquote>
+  <ol>
+    <li>엄밀하고 확실한 요구 사항을 가지고 있으며, 그것이 크게 바뀌지 않을 것이라고 확신하기 전에는 예측적인 계획을 세우지 말라.</li>
+    <li>엄밀하고 확실하며 안정된 요구 사항을 가질 수 없다면, 적응 계획법을 사용하라.</li>
+  </ol>
+</blockquote>
+
+<h2 id="애자일-프로세스">애자일 프로세스</h2>
+
+<ul>
+  <li>애자일(agile)이란, <strong>정의한 공통의 가치와 원칙을 준수하는 다양한 공정을 대표하는 용어</strong>이다.</li>
+  <li>본질적으로 아주 <strong>적응적인 방법론</strong>이다.</li>
+  <li>프로젝트 성공의 가장 중요한 요인이 <strong>구성원들의 능력</strong>이며, <strong>구성원들이 얼마나 협업하는지</strong>에 달려 있다고 가정한다.</li>
+  <li>UML을 <strong>스케치</strong>용도로 사용한다.</li>
+</ul>
+
+<h2 id="rational-unified-process">Rational Unified Process</h2>
+
+<ul>
+  <li>Rational Unified Process(RUP)를 사용할 때 가장 먼저 해야 할 일은 <strong>개발 사례(development case)</strong> 를 선택하는 것이다.
+    <ul>
+      <li>개발 사레를 선택하는 것은 RUP에 아주 익숙하고 RUP를 특정한 프로젝트의 필요에 따라서 가공할 수 있는 사람이 미리 해야한다.</li>
+    </ul>
+  </li>
+  <li>RUP는 근본적으로 <strong>반복 공정</strong>이다. 모든 RUP 프로젝트는 다음의 네 가지 단계를 따라야 한다.
+    <ul>
+      <li><strong>개념화 단계(Inception)</strong>
+        <ul>
+          <li>프로젝트에 대한 초기 평가를 한다.</li>
+        </ul>
+      </li>
+      <li><strong>상세화 단계(Elaboration)</strong>
+        <ul>
+          <li>주요 유스 케이스를 도출하고 시스템의 아키텍처를 펼쳐 놓기 위해서 반복적으로 소프트웨어를 개발한다.</li>
+          <li>이 단계가 끝나면 요구 사항을 잘 이해하고 있어야 하며, 개발의 모체의 역할을 하는 뼈대 시스템(skeleton system)이 동작하고 있어야 한다.</li>
+        </ul>
+      </li>
+      <li><strong>구축 단계(Construction)</strong>
+        <ul>
+          <li>계속해서 개발 공정을 진행하고, 릴리즈 하기 충분한 기능을 개발해야 한다.</li>
+        </ul>
+      </li>
+      <li><strong>전이 단계(Transition)</strong>
+        <ul>
+          <li>반복적으로 수행하지 않는 다양한 최종 단계의 액티비티를 포함한다.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>때로 RUP는 <strong>Unified Process(UP)</strong> 라고 불린다.</li>
+</ul>
+
+<h2 id="공정을-프로젝트에-적용하기">공정을 프로젝트에 적용하기</h2>
+
+<ul>
+  <li>모든 프로젝트에 맞는 만능 공정이 있을 것으로 기대해서는 절대 안된다.</li>
+  <li>소프트웨어 개발에 사용하게 되는 방법은 <strong>많은 요인에 의해서 결정</strong>된다.
+    <ul>
+      <li>개발하고자 하는 시스템의 종류, 사용하려고 하는 기술, 팀의 크기와 구성, 위험 요소의 특성, 실패의 결과, 팀의 일하는 스타일, 회사의 문화 등이 있다.</li>
+    </ul>
+  </li>
+  <li>언제나 공정을 <strong>특별한 환경에 맞도록 변화</strong>시켜야만 한다.
+    <ol>
+      <li>프로젝트를 살펴보고 어떤 공정들이 맞을 것 같은지 고려한다.</li>
+      <li>공정을 어떻게 변화시켜야 프로젝트에 맞을지 고려한다.
+        <ul>
+          <li>사용해 보기 전까지 완전히 파악하기 어려운 공정들이 많다.</li>
+          <li>이런 경우 어떻게 동작하는지 알게될 때까지 공정을 사용해서 <strong>몇 번의 반복</strong>을 수행해보는 것이 도움이 된다.</li>
+        </ul>
+      </li>
+    </ol>
+  </li>
+  <li>시작하게 되면 공정을 믿어라. 그래야 공정을 수행하면서 배울 수 있다.</li>
+  <li>매 반복이 끝날 때, <strong>반복 돌아보기(iteration retrospective)</strong> 를 수행하라.
+    <ul>
+      <li><strong>유지할 것(Keep)</strong> : 진행이 잘 되어서 계속해서 하려 하는 것들</li>
+      <li><strong>문제점(Problem)</strong> : 잘 되지 않은 부분</li>
+      <li><strong>시도할 것(Try)</strong> : 공정을 개선하기 위해 변화시킬 것들</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="uml을-공정에-적용하기">UML을 공정에 적용하기</h2>
+
+<h3 id="요구-사항-분석">요구 사항 분석</h3>
+
+<ul>
+  <li>요구 사항 분석의 액티비티란 <strong>소프트웨어의 사용자와 고객들이 시스템이 어떤 것들을 해 주기를 원하는지 파악하기 위해서 노력</strong>하는 것이다.
+    <ul>
+      <li><strong>유스 케이스</strong> : 사람들이 시스템과 어떻게 상호 작용을 하는지 보여준다.</li>
+      <li><strong>개념적인 관점에서 그려진 클래스 다이어그램</strong> : 도메인의 정확한 어휘를 구성하는 좋은 방법이 될 수 있다.</li>
+      <li><strong>액티비티 다이어그램</strong> : 소프트웨어와 사람의 행동이 어떻게 상호 작용 하는지 보여준다. 복잡한 유스 케이스가 어떻게 동작하는지를 자세히 보여줄 수 있다.</li>
+      <li><strong>상태 다이어그램</strong> : 어떤 개념이 다양한 상태와 그 상태를 변경하는 이벤트로 구성되어 흥미로운 생명 주기를 가지고 있을 때 유용하다.</li>
+    </ul>
+  </li>
+  <li>가장 중요한 것은 <strong>사용자와 고객과 대화</strong>하는 것이다.</li>
+  <li>기술과 거리가 먼 사람들을 이해시키기 위해 <strong>표기법을 최소한으로 유지</strong>하는 것이 중요하다.</li>
+</ul>
+
+<h3 id="설계">설계</h3>
+
+<ul>
+  <li>다이어그램에 좀 더 기술적인 표현을 해도 좋다.
+    <ul>
+      <li><strong>소프트웨어 관점에서의 클래스 다이어그램</strong> : 소프트웨어 내의 클래스와 이 클래스들이 서로 어떻게 연관되는지를 보여 준다.</li>
+      <li><strong>공통 시나리오에 대한 시퀀스 다이어그램</strong> : CRC 카드나 시퀀스 다이어그램을 사용하여 소프트웨어에서 무엇이 일어나는지 알아낼 수 있다.</li>
+      <li>소프트웨어의 구조를 큰 단위로 나타내는 <strong>패키지 다이어그램</strong></li>
+      <li>복잡한 생성 이력을 가지는클래스에 대한 <strong>상태 다이어그램</strong></li>
+      <li>소프트웨어의 물리적인 레이아웃을 보여주는 <strong>배치 다이어그램</strong></li>
+    </ul>
+  </li>
+  <li><strong>폭포수 기법</strong>에서는 UML을 <strong>청사진</strong>으로 사용한다고 가정한다.</li>
+  <li><strong>반복 스타일</strong>에서는 UML이 <strong>청사진이나 스케치</strong>로 사용될 수 있다.</li>
+  <li><strong>청사진</strong> 설계는 반복의 초기에 이루어지는 것이 보통이지만, 해당 반복에서 <strong>개발하고자 하는 기능의 범위에 따라서 분리</strong>해서 만들어질 수도 있다.</li>
+  <li><strong>스케치</strong>로 사용하는 것은 반복의 초기 며칠을 할애하여 해당 반복에 대한 초안을 설계한다.
+    <ul>
+      <li>대안을 찾는 가장 좋은 방법이다.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="문서화">문서화</h3>
+
+<ul>
+  <li>소프트웨어를 개발한 후에 한 일을 문서화하기 위해 UML을 사용한다.</li>
+  <li><strong>전체 시스템에 대해 자세한 다이어그램을 만들어야 한다고 생각하지 않는다.</strong></li>
+</ul>
+
+<blockquote>
+  <p>조심스럽게 선택해서 잘 기록한 메모는 전통적인 복잡한 설계 문서를 쉽게 대체할 수 있다. 후자는 일부분 외에 거의 도움이 되지 않는다. 이 일부분을 강조하고 나머지는 잊어버려라.(워드 커닝햄, Cunningham)</p>
+</blockquote>
+
+<ul>
+  <li><strong>패키지 다이어그램</strong>은 시스템에 대한 좋은 <strong>논리적인</strong> 로드 맵이 된다.</li>
+  <li><strong>물리적인 모습</strong>을 개략적으로 보여주는 <strong>배치 다이어그램</strong>도 이 단계에서 유용할 수 있다.</li>
+  <li><strong>클래스 다이어그램</strong>은 시스템의 가장 중요한 상호 작용을 나타내는 몇 개의 <strong>교류 다이어그램</strong>의 지원을 받아야 한다.</li>
+  <li>클래스가 <strong>복잡한 생명 주기</strong>를 보인다면, <strong>상태 기계 다이어그램</strong>을 그린다.</li>
+  <li><strong>복잡한 알고리즘</strong>이 있다면, <strong>액티비티 다이어그램</strong>을 사용하는 것을 고려한다.</li>
+</ul>
+
+<h3 id="오래된-코드를-이해하기">오래된 코드를 이해하기</h3>
+
+<ul>
+  <li>코드를 탐색할 때 <strong>중요한 부분을 공략</strong>하기 위해서 사용하라.</li>
+  <li>복잡한 메소드를 처리하기 위해서 많은 객체들이 어떻게 <strong>협력하는지</strong>를 보여 주는 <strong>시퀀스 다이어그램</strong>을 만드는 것이 좋다.</li>
+</ul>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/tags/#study" class="page__taxonomy-item" rel="tag">Study</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#uml" class="page__taxonomy-item" rel="tag">UML</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#%EC%9A%94%EC%95%BD" class="page__taxonomy-item" rel="tag">요약</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#%EC%A0%95%EB%A6%AC" class="page__taxonomy-item" rel="tag">정리</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/categories/#study" class="page__taxonomy-item" rel="tag">Study</a>
+    
+    </span>
+  </p>
+
+
+        
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2020-03-26T00:00:00+09:00">March 26, 2020</time></p>
+        
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=%5BUML+Distilled%5D+2%EC%9E%A5%20http%3A%2F%2Flocalhost%3A4000%2Fstudy%2Fuml-distilled-chapter2%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fstudy%2Fuml-distilled-chapter2%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fstudy%2Fuml-distilled-chapter2%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/study/uml-distilled-chapter1/" class="pagination--pager" title="[UML Distilled] 1장
+">Previous</a>
+    
+    
+      <a href="/study/uml-distilled-chapter3/" class="pagination--pager" title="[UML Distilled] 3장
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You may also enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/study/promise-async-await/" rel="permalink">Promise, Async, Await
+</a>
+      
+    </h2>
+    <!--
+    
+    -->
+    
+      <p class="page__meta"><i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i> January 14 2021</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">promise, async, await 사용 방법
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/1d1c_1/" rel="permalink">1d1c_1
+</a>
+      
+    </h2>
+    <!--
+    
+    -->
+    
+      <p class="page__meta"><i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i> June 07 2020</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">06.01
+
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/study/object-chapter9/" rel="permalink">[Object] 9장
+</a>
+      
+    </h2>
+    <!--
+    
+    -->
+    
+      <p class="page__meta"><i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i> June 04 2020</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Object 9장 요약
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/study/object-chapter10/" rel="permalink">[Object] 10장
+</a>
+      
+    </h2>
+    <!--
+    
+    -->
+    
+      <p class="page__meta"><i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i> June 04 2020</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Object 10장 요약
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+      
+        
+      
+        
+          <li><a href="https://github.com/anstjaos" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+      
+        
+      
+        
+          <li><a href="https://instagram.com/document_k" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+        
+      
+    
+
+    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2021 anstjaos. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+  <script src="https://kit.fontawesome.com/4eee35f757.js"></script>
+
+
+
+
+
+
+
+    
+  <script>
+    var disqus_config = function () {
+      this.page.url = "http://localhost:4000/study/uml-distilled-chapter2/";  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = "/study/uml-distilled-chapter2"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    (function() { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = 'https://github-comments.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+  
+
+
+
+
+
+  </body>
+</html>

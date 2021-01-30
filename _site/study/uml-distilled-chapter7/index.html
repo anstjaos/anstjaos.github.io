@@ -1,0 +1,675 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.17.2 by Michael Rose
+  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>[UML Distilled] 7장 - 노력하는 개발자의 블로그</title>
+<meta name="description" content="UML Distilled 7장 요약">
+
+
+  <meta name="author" content="anstjaos">
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="노력하는 개발자의 블로그">
+<meta property="og:title" content="[UML Distilled] 7장">
+<meta property="og:url" content="http://localhost:4000/study/uml-distilled-chapter7/">
+
+
+  <meta property="og:description" content="UML Distilled 7장 요약">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2020-04-16T00:00:00+09:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/study/uml-distilled-chapter7/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "anstjaos",
+      "url": "http://localhost:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="노력하는 개발자의 블로그 Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          노력하는 개발자의 블로그
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/about/" >About</a>
+            </li><li class="masthead__menu-item">
+              <a href="/categories/" >Categories</a>
+            </li><li class="masthead__menu-item">
+              <a href="/tags/" >Tags</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person">
+
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name">anstjaos</h3>
+    
+    
+      <div class="author__bio" itemprop="description">
+        <p>열심히 <strong>공부하는</strong> 개발자입니다</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">Republic of Korea</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="mailto:vv_eros@naver.com" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> Email</a></li>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <li><a href="https://github.com/anstjaos" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+          
+        
+          
+            <li><a href="https://instagram.com/document_k" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+          
+        
+      
+
+      
+
+      
+        <li>
+          <a href="mailto:moonseo.kim@nhn.com">
+            <meta itemprop="email" content="moonseo.kim@nhn.com" />
+            <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> Email
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="[UML Distilled] 7장">
+    <meta itemprop="description" content="UML Distilled 7장 요약">
+    <meta itemprop="datePublished" content="2020-04-16T00:00:00+09:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">[UML Distilled] 7장
+</h1>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <h1 id="7장-패키지-다이어그램">7장. 패키지 다이어그램</h1>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">패키지</code>는 UML의 어떤 구성 요소라도 더 높은 수준의 단위로 묶을 수 있도록 하는 묶음 구조이다.</li>
+  <li>UML 모델에서 각각의 클래스는 단일 패키지의 멤버이다.</li>
+  <li>패키지도 다른 패키지의 멤버가 될 수 있다.</li>
+  <li>최상위 패키지를 하위 패키지로 나누고, 하위 패키지를 다시 하위 패키지로 나누는 것을 계속하여 클래스까지 내려가는 <strong>계층 구조</strong>를 얻을 수 있다.</li>
+  <li>패키지는 <strong>네임스페이스(namespace)</strong> 를 나타낸다.</li>
+  <li>모든 클래스가 자신이 속한 패키지 내에서 유일한 이름을 가져야 한다는 것을 뜻한다.
+    <ul>
+      <li><strong>완전한 이름(fully qualified name)</strong> : 소속된 패키지 구조를 보여주는 이름 예) System::Date</li>
+    </ul>
+  </li>
+</ul>
+
+<p><img src="https://i.imgur.com/BMUA0RA.png" alt="7-1" /><br /></p>
+
+<p><i><strong>그림 7.1</strong> 다이어그램에서 패키지를 표현하는 방법</i></p>
+
+<ul>
+  <li>UML에서는 패키지 내의 클래스가 <strong>public</strong> 또는 <strong>private</strong>일 수 있다.
+    <ul>
+      <li>public 클래스는 패키지의 인터페이스의 한 부분이다.</li>
+      <li>private 클래스는 보이지 않는다.</li>
+    </ul>
+  </li>
+  <li>패키지의 public 클래스와 연관된 오퍼레이션 중 작은 부분만을 노출하는 방법으로 패키지의 인터페이스를 줄여야한다.</li>
+  <li>모든 클래스를 <strong>private</strong>로 하여 같은 패키지의 클래스만 서로 볼 수 있도록 하고, <strong>public</strong> 행동을 위한 public 클래스를 더하는 방법으로 하면 된다.</li>
+</ul>
+
+<h4 id="어떤-패키지에-어떤-클래스를-넣을지를-어떻게-정해야-할까"><em>어떤 패키지에 어떤 클래스를 넣을지를 어떻게 정해야 할까?</em></h4>
+
+<ul>
+  <li><strong>공통 폐쇄 원칙(Common Closure Principle)</strong>
+    <ul>
+      <li>한 패키지의 클래스들을 변경하는 이유는 서로 유사해야 한다.</li>
+    </ul>
+  </li>
+  <li><strong>공통 재사용 원칙(Common Reuse Principle)</strong>
+    <ul>
+      <li>한 패키지의 클래스들이 함께 재사용 되어야만 한다.</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="패키지와-의존">패키지와 의존</h2>
+
+<ul>
+  <li>패키지 간의 의존은 패키지 내용들 간의 의존을 요약한다.</li>
+  <li>좋은 패키지 구조는 <strong>의존의 흐름</strong>을 명확하게 보여준다.</li>
+  <li>보통 모든 의존이 한 방향으로 흐를 때에 흐름이 명확하다고 생각할 수 있다. 이것은 시스템이 잘 구성되었는지에 대한 좋은 지표이지만, 예외는 존재한다.</li>
+</ul>
+
+<p><img src="https://i.imgur.com/s3Qe5qT.png" alt="7-2" /><br /></p>
+
+<p><i><strong>그림 7.2</strong> 엔터프라이즈 어플리케이션을 위한 패키지 다이어그램</i></p>
+
+<ul>
+  <li>의존에는 사이클이 없어야 한다.</li>
+  <li>의존이 많아질수록 패키지의 <strong>인터페이스는 더 견고</strong>해야 한다. 인터페이스가 조금이라도 변경되면 그것에 의존하는 모든 패키지에 영향을 주기 때문이다. <strong>(Stable Dependencies Principle)</strong></li>
+  <li>패키지가 더 견고할수록 인터페이스와 추상 클래스의 비율이 높은 경향이 있다. <strong>(Stable Abstractions Principle)</strong></li>
+  <li>너무 많은 곳에서 쓰이는 패키지는 <strong>&lt;&lt;global»</strong> 키워드를 붙인다.</li>
+</ul>
+
+<h2 id="패키지-측면">패키지 측면</h2>
+
+<ul>
+  <li><em>그림 7.2</em>를 <em>그림 7.3</em>처럼 두 가지 측면을 분리해서 차이를 더 분명하게 만들 수 있다.</li>
+</ul>
+
+<p><img src="https://i.imgur.com/ZM4WuGN.png" alt="7-3" /><br /></p>
+
+<p><i><strong>그림 7.3</strong> 그림 7.2를 두 개의 측면으로 구분한 예</i></p>
+
+<h2 id="패키지-구현하기">패키지 구현하기</h2>
+
+<p><img src="https://i.imgur.com/qXFsAdK.png" alt="7.4" /><br /></p>
+
+<p><i><strong>그림 7.4</strong> 하나의 패키지가 여러 개의 패키지들에 의해 구현되는 예</i></p>
+
+<ul>
+  <li><strong>실현 관계(realization relationship)</strong> 는 데이터베이스 게이트웨이가 인터페이스를 정의하고 다른 게이트웨이 클래스들이 구현을 하는 것을 나타낸다.</li>
+  <li>인터페이스와 그것의 구현이 서로 다른 패키지에 있는 것은 아주 흔한 일이다.</li>
+</ul>
+
+<p><img src="https://i.imgur.com/kEBbFKU.png" alt="7.5" /><br /></p>
+
+<p><i><strong>그림 7.5</strong> 클라이언트 패키지에서 필요한 인터페이스를 정의한다.</i></p>
+
+<h2 id="언제-패키지-다이어그램을-사용하는가">언제 패키지 다이어그램을 사용하는가</h2>
+
+<ul>
+  <li>거대한 크기의 시스템에서 <strong>주요 요소들 간의 의존</strong>에 대한 전체적인 관계를 이해하는데 유용하다.</li>
+  <li>어플리케이션의 의존을 통제하는데 도움이 된다.</li>
+  <li>패키지 다이어그램은 <strong>컴파일 시(complie-time)</strong> 에 그룹을 짓는 기법이다.</li>
+</ul>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/tags/#study" class="page__taxonomy-item" rel="tag">Study</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#uml" class="page__taxonomy-item" rel="tag">UML</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#%EC%9A%94%EC%95%BD" class="page__taxonomy-item" rel="tag">요약</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#%EC%A0%95%EB%A6%AC" class="page__taxonomy-item" rel="tag">정리</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/categories/#study" class="page__taxonomy-item" rel="tag">Study</a>
+    
+    </span>
+  </p>
+
+
+        
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2020-04-16T00:00:00+09:00">April 16, 2020</time></p>
+        
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=%5BUML+Distilled%5D+7%EC%9E%A5%20http%3A%2F%2Flocalhost%3A4000%2Fstudy%2Fuml-distilled-chapter7%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fstudy%2Fuml-distilled-chapter7%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fstudy%2Fuml-distilled-chapter7%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/study/uml-distilled-chapter6/" class="pagination--pager" title="[UML Distilled] 6장
+">Previous</a>
+    
+    
+      <a href="/study/uml-distilled-chapter8/" class="pagination--pager" title="[UML Distilled] 8장
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You may also enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/study/promise-async-await/" rel="permalink">Promise, Async, Await
+</a>
+      
+    </h2>
+    <!--
+    
+    -->
+    
+      <p class="page__meta"><i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i> January 14 2021</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">promise, async, await 사용 방법
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/1d1c_1/" rel="permalink">1d1c_1
+</a>
+      
+    </h2>
+    <!--
+    
+    -->
+    
+      <p class="page__meta"><i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i> June 07 2020</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">06.01
+
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/study/object-chapter9/" rel="permalink">[Object] 9장
+</a>
+      
+    </h2>
+    <!--
+    
+    -->
+    
+      <p class="page__meta"><i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i> June 04 2020</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Object 9장 요약
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/study/object-chapter10/" rel="permalink">[Object] 10장
+</a>
+      
+    </h2>
+    <!--
+    
+    -->
+    
+      <p class="page__meta"><i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i> June 04 2020</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Object 10장 요약
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+      
+        
+      
+        
+          <li><a href="https://github.com/anstjaos" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+      
+        
+      
+        
+          <li><a href="https://instagram.com/document_k" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+        
+      
+    
+
+    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2021 anstjaos. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+  <script src="https://kit.fontawesome.com/4eee35f757.js"></script>
+
+
+
+
+
+
+
+    
+  <script>
+    var disqus_config = function () {
+      this.page.url = "http://localhost:4000/study/uml-distilled-chapter7/";  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = "/study/uml-distilled-chapter7"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    (function() { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = 'https://github-comments.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+  
+
+
+
+
+
+  </body>
+</html>

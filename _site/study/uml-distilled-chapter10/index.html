@@ -1,0 +1,769 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.17.2 by Michael Rose
+  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>[UML Distilled] 10장 - 노력하는 개발자의 블로그</title>
+<meta name="description" content="UML Distilled 10장 요약">
+
+
+  <meta name="author" content="anstjaos">
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="노력하는 개발자의 블로그">
+<meta property="og:title" content="[UML Distilled] 10장">
+<meta property="og:url" content="http://localhost:4000/study/uml-distilled-chapter10/">
+
+
+  <meta property="og:description" content="UML Distilled 10장 요약">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2020-04-23T00:00:00+09:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/study/uml-distilled-chapter10/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "anstjaos",
+      "url": "http://localhost:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="노력하는 개발자의 블로그 Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          노력하는 개발자의 블로그
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/about/" >About</a>
+            </li><li class="masthead__menu-item">
+              <a href="/categories/" >Categories</a>
+            </li><li class="masthead__menu-item">
+              <a href="/tags/" >Tags</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person">
+
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name">anstjaos</h3>
+    
+    
+      <div class="author__bio" itemprop="description">
+        <p>열심히 <strong>공부하는</strong> 개발자입니다</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">Republic of Korea</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="mailto:vv_eros@naver.com" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> Email</a></li>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <li><a href="https://github.com/anstjaos" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+          
+        
+          
+            <li><a href="https://instagram.com/document_k" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+          
+        
+      
+
+      
+
+      
+        <li>
+          <a href="mailto:moonseo.kim@nhn.com">
+            <meta itemprop="email" content="moonseo.kim@nhn.com" />
+            <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> Email
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="[UML Distilled] 10장">
+    <meta itemprop="description" content="UML Distilled 10장 요약">
+    <meta itemprop="datePublished" content="2020-04-23T00:00:00+09:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">[UML Distilled] 10장
+</h1>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <h1 id="10장-상태-기계-다이어그램">10장. 상태 기계 다이어그램</h1>
+
+<ul>
+  <li><strong>상태 기계 다이어그램(State Machine Diagram)</strong> 은 시스템의 행동을 기술하는 잘 알려진 기술이다.</li>
+  <li>객체 지향적인 접근 방법에서는 단일 객체가 활성인 시간 동안 어떤 행동을 하는지 나타내기 위해서 그린다.</li>
+</ul>
+
+<p><img src="https://i.imgur.com/23sCcXn.png" alt="10.1.png" />
+<br /><i><strong>그림 10.1</strong> 간단한 상태 기계 다이어그램</i>
+<br /></p>
+
+<ul>
+  <li>상태 다이어그램은 객체가 생성되었을 때의 상태에서 시작한다.</li>
+  <li><strong>초기 의사 상태(initial pseudostate)</strong> 는 실제의 상태는 아니지만 초기 상태를 가리키는 화살표를 가지고 있다.</li>
+  <li><strong>전이(transition)</strong> 는 한 상태에서 또 다른 상태로의 이동을 나타낸다.</li>
+  <li>모든 전이는 3부분으로 이루어진 레이블을 가지고 있다.
+    <ul>
+      <li>레이블의 형태는 <strong>트리거-서명 [가드] / 액티비티</strong>의 형태이다.</li>
+      <li>전이 표기법의 세 부분은 모두 선택 사항이다.</li>
+      <li><strong>트리거-서명(trigger-signature)</strong> 은 상태의 변화를 유발할 수 있는 단일 이벤트이다. 트리거-서명이 없는 경우는 전이가 즉시 일어나는 것을 의미한다.</li>
+      <li><strong>가드(guard)</strong> 는 트랜지션이 이루어지기 위해서 만족해야하는 부울린(Boolean) 조건이다. 가드가 없는 것은 이벤트가 일어나면 무조건 전이가 일어난다는 것이다.</li>
+      <li><strong>액티비티(activity)</strong> 는 전이 동안 수행되는 어떤 행동이다. 액티비티가 없는 것은 전이 동안 아무 일도 하지 않는 것을 의미한다.</li>
+    </ul>
+  </li>
+  <li>어떤 상태에서 이벤트가 발생하면, 상태에서부터 나가는 방향의 전이 중 <strong>하나만을</strong> 취할 수 있다.</li>
+  <li>같은 이벤트에 대한 여러 개의 전이가 있다면, 가드가 <strong>상호 배제(mutually exclusive)</strong> 여야만 한다.</li>
+  <li>이벤트가 발생했는데도 유효한 전이가 하나도 없다면 이벤트는 무시된다.</li>
+  <li><strong>최종 상태(final state)</strong> 는 상태 기계가 끝났음을 의미하며, 객체가 삭제되는 것을 암시한다.</li>
+  <li>상태 기계는 객체가 직접 관찰하거나 작동시키는 것만을 보여줄 수 있다.</li>
+</ul>
+
+<h2 id="내부-액티비티">내부 액티비티</h2>
+
+<ul>
+  <li>어떤 상태에서 이벤트가 발생했을 때 전이 없이 반응할 수 있다. 이때 <strong>내부 액티비티(internal activity)</strong> 를 사용한다.</li>
+</ul>
+
+<p><img src="https://i.imgur.com/CJ7HfvP.png" alt="10.2.png" />
+<br /><i><strong>그림 10.2</strong> 테스트 필드 입력 상태에서 생길 수 있는 내부 이벤트</i>
+<br /></p>
+
+<ul>
+  <li>내부 액티비티는 <strong>자기-전이(self-transition)</strong> 과 유사하다. 자기-전이란 같은 상태로 돌아오는 전이이다.</li>
+  <li><strong>입장 액티비티(entry activity)</strong> 는 상태에 들어올 때, <strong>퇴장 액티비티(exit activity)</strong> 는 상태를 떠날 때 수행된다.</li>
+</ul>
+
+<h2 id="활동-상태">활동 상태</h2>
+
+<ul>
+  <li>객체가 무엇인가 작업을 하고 있는 상태를 <strong>활동 상태(activity state)</strong> 라고 한다. <strong>do-액티비티</strong>라는 용어를 쓴다.</li>
+</ul>
+
+<p><img src="https://i.imgur.com/iUJiErx.png" alt="10.3.png" /></p>
+
+<p><br /><i><strong>그림 10.3</strong> 활동 상태</i></p>
+
+<ul>
+  <li>do-액티비티와 일반 액티비티는 모두 어떤 행동을 수행하는 것을 나타낸다. 이 둘의 중대한 차이는 일반 액티비티가 <strong>“순간적으로”</strong> 일어나며 일반 이벤트에 의해서 <strong>멈출 수 없는 것</strong>에 비해서 do-액티비티는 <strong>일정한 시간</strong> 동안 일어나며 <strong>멈출 수 있다.</strong></li>
+</ul>
+
+<h2 id="상위-상태">상위 상태</h2>
+
+<p><img src="https://i.imgur.com/KekHZi1.png" alt="10.4.png" />
+<br /><i><strong>그림 10.4</strong> 하위 상태를 포함하는 상위 상태</i></p>
+
+<ul>
+  <li>몇 개의 상태가 공통적인 전이와 내부 액티비티를 공유한다.</li>
+</ul>
+
+<h2 id="동시-상태">동시 상태</h2>
+
+<p><img src="https://i.imgur.com/Mh6CrFE.png" alt="10.5.png" />
+<br /><i><strong>그림 10.5</strong> 동시 직교 상태</i></p>
+
+<ul>
+  <li>상태들은 동시에 진행되는 몇 개의 직교 상태(orthogonal state) 다이어그램으로 나누어질 수 있다.</li>
+  <li><strong>과거 의사 상태(history pseudostate)</strong> 에서 나가는 화살표는 최초의 내역이 없을 때 가는 상태를 가리킨다.</li>
+</ul>
+
+<h2 id="상태-다이어그램의-구현">상태 다이어그램의 구현</h2>
+
+<ul>
+  <li>상태 다이어그램은 크게 세 가지 방법으로 구현될 수 있다. <strong>내장 스위치(nested switch), 상태 패턴(state pattern), 상태 표(state table)</strong> 이다.</li>
+</ul>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kt">void</span> <span class="nf">HandleEvent</span><span class="o">(</span><span class="nc">PanelEvent</span> <span class="n">anEvent</span><span class="o">)</span> <span class="o">{</span>
+    <span class="k">switch</span> <span class="o">(</span><span class="nc">CurrentState</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">case</span> <span class="nc">PanelState</span><span class="o">.</span><span class="na">Open</span> <span class="o">:</span>
+            <span class="k">switch</span> <span class="o">(</span><span class="n">anEvent</span><span class="o">)</span> <span class="o">{</span>
+                <span class="k">case</span> <span class="nc">PanelEvent</span><span class="o">.</span><span class="na">SafeClosed</span> <span class="o">:</span>
+                    <span class="nc">CurrentState</span> <span class="o">=</span> <span class="nc">PanelState</span><span class="o">.</span><span class="na">Wait</span><span class="o">;</span>
+                <span class="k">break</span><span class="o">;</span>
+            <span class="o">}</span>
+            <span class="k">break</span><span class="o">;</span>
+        <span class="k">case</span> <span class="nc">PanelState</span><span class="o">.</span><span class="na">Wait</span> <span class="o">:</span>
+            <span class="k">switch</span> <span class="o">(</span><span class="n">anEvent</span><span class="o">)</span> <span class="o">{</span>
+                <span class="k">case</span> <span class="nc">PanelEvent</span><span class="o">.</span><span class="na">CandleRemoved</span> <span class="o">:</span>
+                    <span class="k">if</span> <span class="o">(</span><span class="n">isDoorClosed</span><span class="o">)</span> <span class="o">{</span>
+                        <span class="nc">RevealLock</span><span class="o">();</span>
+                        <span class="nc">CurrentState</span> <span class="o">=</span> <span class="nc">PanelState</span><span class="o">.</span><span class="na">Lock</span><span class="o">;</span>
+                    <span class="o">}</span>
+                <span class="k">break</span><span class="o">;</span>
+            <span class="o">}</span>
+            <span class="k">break</span><span class="o">;</span>
+        <span class="k">case</span> <span class="nc">PanelState</span><span class="o">.</span><span class="na">Lock</span> <span class="o">:</span>
+            <span class="k">switch</span> <span class="o">(</span><span class="n">anEvent</span><span class="o">)</span> <span class="o">{</span>
+                <span class="k">case</span> <span class="nc">PanelEvent</span><span class="o">.</span><span class="na">KeyTurned</span> <span class="o">:</span>
+                    <span class="k">if</span> <span class="o">(</span><span class="n">isCandleIn</span><span class="o">)</span> <span class="o">{</span>
+                        <span class="nc">OpenSafe</span><span class="o">();</span>
+                        <span class="nc">CurrentState</span> <span class="o">=</span> <span class="nc">PanelState</span><span class="o">.</span><span class="na">Open</span><span class="o">;</span>
+                    <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+                        <span class="nc">ReleaseKillerRabbit</span><span class="o">();</span>
+                        <span class="nc">CurrentState</span> <span class="o">=</span> <span class="nc">PanelState</span><span class="o">.</span><span class="na">Final</span><span class="o">;</span>
+                    <span class="o">}</span>
+                    <span class="k">break</span><span class="o">;</span>
+            <span class="o">}</span>
+            <span class="k">break</span><span class="o">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<p><i><strong>그림 10.6</strong> 그림 10.1의 상태를 구현하는 C# 내장 스위치 구문 예</i></p>
+
+<ul>
+  <li><strong>내장 스위치</strong> 구문은 직접적이기는 하나 이렇게 단순한 경우에 대해서도 너무 장황하다.</li>
+</ul>
+
+<p><img src="https://i.imgur.com/Nl2Dwhh.png" alt="10.7.png" />
+<br /><i><strong>그림 10.7</strong> 그림 10.1을 상태 패턴으로 구현한 예</i></p>
+
+<ul>
+  <li><strong>상태 패턴(state pattern)</strong> 은 상태의 행동을 다루기 위해서 상태 클래스의 계층 구조를 만들어낸다.</li>
+  <li>컨트롤러는 각각의 이벤트에 대해서 메소드를 가지고 있으며, 이것은 단순히 상태 클래스로 보내진다.</li>
+  <li>계층 구조의 맨 위에는 아무 것도 하지 않는 이벤트 처리 메소드를 구현하는 <strong>추상 클래스</strong>가 있다.</li>
+</ul>
+
+<p><i><strong>표 10.1</strong> 그림 10.1에 대한 상태 표</i></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>현재 상태</th>
+      <th>다음 상태</th>
+      <th>이벤트</th>
+      <th>가드</th>
+      <th>프로시저</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>대기</td>
+      <td>잠김</td>
+      <td>양초가 옮겨짐</td>
+      <td>문이 닫혀 있음</td>
+      <td>자물쇠를 드러낸다</td>
+    </tr>
+    <tr>
+      <td>잠김</td>
+      <td>열림</td>
+      <td>열쇠를 돌림</td>
+      <td>양초가 제자리에 있음</td>
+      <td>금고를 연다</td>
+    </tr>
+    <tr>
+      <td>잠김</td>
+      <td>최종</td>
+      <td>열쇠를 돌림</td>
+      <td>양초가 제자리에 없음</td>
+      <td>자물쇠를 내보낸다</td>
+    </tr>
+    <tr>
+      <td>열림</td>
+      <td>대기</td>
+      <td>금고가 닫힘</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li><strong>상태 표(state table)</strong> 는 상태 다이어그램 정보를 데이터로 여긴다.</li>
+</ul>
+
+<h2 id="언제-상태-다이어그램을-사용하는가">언제 상태 다이어그램을 사용하는가</h2>
+
+<ul>
+  <li>상태 다이어그램은 몇 개의 유스 케이스에 걸쳐진 객체의 행동을 묘사하는 데 좋다.</li>
+  <li>많은 객체들이 협력해서 이루어지는 행동을 설명하는 데에는 그다지 좋지 않다.</li>
+</ul>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/tags/#study" class="page__taxonomy-item" rel="tag">Study</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#uml" class="page__taxonomy-item" rel="tag">UML</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#%EC%9A%94%EC%95%BD" class="page__taxonomy-item" rel="tag">요약</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#%EC%A0%95%EB%A6%AC" class="page__taxonomy-item" rel="tag">정리</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/categories/#study" class="page__taxonomy-item" rel="tag">Study</a>
+    
+    </span>
+  </p>
+
+
+        
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2020-04-23T00:00:00+09:00">April 23, 2020</time></p>
+        
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=%5BUML+Distilled%5D+10%EC%9E%A5%20http%3A%2F%2Flocalhost%3A4000%2Fstudy%2Fuml-distilled-chapter10%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fstudy%2Fuml-distilled-chapter10%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fstudy%2Fuml-distilled-chapter10%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/study/uml-distilled-chapter9/" class="pagination--pager" title="[UML Distilled] 9장
+">Previous</a>
+    
+    
+      <a href="/study/uml-distilled-chapter11/" class="pagination--pager" title="[UML Distilled] 11장
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You may also enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/study/promise-async-await/" rel="permalink">Promise, Async, Await
+</a>
+      
+    </h2>
+    <!--
+    
+    -->
+    
+      <p class="page__meta"><i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i> January 14 2021</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">promise, async, await 사용 방법
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/1d1c_1/" rel="permalink">1d1c_1
+</a>
+      
+    </h2>
+    <!--
+    
+    -->
+    
+      <p class="page__meta"><i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i> June 07 2020</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">06.01
+
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/study/object-chapter9/" rel="permalink">[Object] 9장
+</a>
+      
+    </h2>
+    <!--
+    
+    -->
+    
+      <p class="page__meta"><i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i> June 04 2020</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Object 9장 요약
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/study/object-chapter10/" rel="permalink">[Object] 10장
+</a>
+      
+    </h2>
+    <!--
+    
+    -->
+    
+      <p class="page__meta"><i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i> June 04 2020</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Object 10장 요약
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+      
+        
+      
+        
+          <li><a href="https://github.com/anstjaos" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+      
+        
+      
+        
+          <li><a href="https://instagram.com/document_k" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+        
+      
+    
+
+    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2021 anstjaos. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+  <script src="https://kit.fontawesome.com/4eee35f757.js"></script>
+
+
+
+
+
+
+
+    
+  <script>
+    var disqus_config = function () {
+      this.page.url = "http://localhost:4000/study/uml-distilled-chapter10/";  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = "/study/uml-distilled-chapter10"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    (function() { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = 'https://github-comments.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+  
+
+
+
+
+
+  </body>
+</html>

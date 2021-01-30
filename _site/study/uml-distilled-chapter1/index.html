@@ -1,0 +1,798 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.17.2 by Michael Rose
+  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>[UML Distilled] 1장 - 노력하는 개발자의 블로그</title>
+<meta name="description" content="UML Distilled 1장 요약">
+
+
+  <meta name="author" content="anstjaos">
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="노력하는 개발자의 블로그">
+<meta property="og:title" content="[UML Distilled] 1장">
+<meta property="og:url" content="http://localhost:4000/study/uml-distilled-chapter1/">
+
+
+  <meta property="og:description" content="UML Distilled 1장 요약">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2020-03-26T00:00:00+09:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/study/uml-distilled-chapter1/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "anstjaos",
+      "url": "http://localhost:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="노력하는 개발자의 블로그 Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          노력하는 개발자의 블로그
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/about/" >About</a>
+            </li><li class="masthead__menu-item">
+              <a href="/categories/" >Categories</a>
+            </li><li class="masthead__menu-item">
+              <a href="/tags/" >Tags</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person">
+
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name">anstjaos</h3>
+    
+    
+      <div class="author__bio" itemprop="description">
+        <p>열심히 <strong>공부하는</strong> 개발자입니다</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">Republic of Korea</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="mailto:vv_eros@naver.com" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> Email</a></li>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <li><a href="https://github.com/anstjaos" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+          
+        
+          
+            <li><a href="https://instagram.com/document_k" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+          
+        
+      
+
+      
+
+      
+        <li>
+          <a href="mailto:moonseo.kim@nhn.com">
+            <meta itemprop="email" content="moonseo.kim@nhn.com" />
+            <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> Email
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="[UML Distilled] 1장">
+    <meta itemprop="description" content="UML Distilled 1장 요약">
+    <meta itemprop="datePublished" content="2020-03-26T00:00:00+09:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">[UML Distilled] 1장
+</h1>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <h1 id="1-uml-소개">1. UML 소개</h1>
+
+<h2 id="uml이란-무엇인가">UML이란 무엇인가?</h2>
+
+<ul>
+  <li><strong>UML(Unified Modeling Language)</strong> 은 그래픽 표기법의 집합으로, <strong>단일 메타모델</strong>을 기초로 하고 있으며 소프트웨어 시스템, 특히 객체 지향 소프트웨어 시스템을 <strong>표현하고 설계</strong>하는 것을 도와준다.</li>
+  <li>그래픽 모델링 언어(graphical modeling language)가 등장하게 된 근본적인 이유는 <strong>프로그래밍 언어가 설계에 대한 논의에 도움을 줄 수 있을 만큼 충분히 추상적이지 못하기 때문이다.</strong></li>
+</ul>
+
+<h2 id="uml을-사용하는-방법들">UML을 사용하는 방법들</h2>
+
+<p>소프트웨어 개발에서의 UML의 역할은 사용하기를 원하는 방법이 다양한 것과 마찬가지로 다양하게 인식된다.
+이러한 인식의 차이를 해결하기 위해 책의 저자와 스티브 멜러는 UML 사용하는 방식을 <strong>세 가지로 특성화</strong>했다.</p>
+
+<h3 id="스케치">스케치</h3>
+
+<ul>
+  <li>세 가지 방식 중 <strong>가장 보편적이다.</strong></li>
+  <li>다른 사람과 <strong>의사소통하는 것을 돕는</strong> 목적으로 UML을 사용한다.</li>
+  <li>스케치는 <strong>순공학</strong> 또는 <strong>역공학</strong>에 사용될 수 있다.
+    <ul>
+      <li><strong>순공학</strong>
+        <ul>
+          <li>코드를 작성하기 전에 UML 다이어그램을 그린다.</li>
+        </ul>
+      </li>
+      <li><strong>역공학</strong>
+        <ul>
+          <li>기존 코드의 이해를 돕기 위해서 UML 다이어그램을 그린다.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>스케치의 핵심은 <strong>선택성</strong>이다.</li>
+  <li>작성하려고 하는 코드에 대해 모두 이야기하는 것이 아니라 하려고 하는 것에 대한 <strong>아이디어와 대안에 대한 의사 소통</strong>을 돕는 것이다.</li>
+  <li>상당히 자유롭고 동적이므로, 빠른 시간에 협력해서 작성할 필요가 있다.</li>
+  <li>완전한 설계 명세보다는 <strong>선택적인 전달성</strong>을 강조한다.</li>
+</ul>
+
+<h3 id="청사진">청사진</h3>
+
+<ul>
+  <li>청사진의 핵심은 <strong>완전성</strong>이다.</li>
+  <li><strong>순공학</strong>에서는 코드를 작성할 프로그래머에게 상세한 설게를 만들어 주는 <strong>설계자</strong>가 청사진을 만든다.</li>
+  <li><strong>역공학</strong>에서는 <strong>코드의 상세한 정보</strong>를 문서로 만들어내거나 <strong>그래픽 브라우저상</strong>에 보여 주기 위한 것이다.
+<code class="language-plaintext highlighter-rouge">스케치는 탐색적인 반면 청사적은 명시적이다.</code></li>
+</ul>
+
+<h3 id="프로그래밍-언어">프로그래밍 언어</h3>
+
+<ul>
+  <li><strong>시스템 전체가 UML로 표현되는 시점</strong>에 도달한 상태이다.</li>
+  <li>개발자가 UML 다이어그램을 그리면 바로 실행 가능한 코드로 컴파일된다.</li>
+  <li>행동 로직을 모델링하는 세 가지 방법이 있다.
+    <ul>
+      <li>교류 다이어그램</li>
+      <li>상태 다이어그램</li>
+      <li>액티비티 다이어그램</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="uml을-바라보는-다른-관점">UML을 바라보는 다른 관점</h3>
+
+<ul>
+  <li><strong>소프트웨어 관점(software perspective)</strong>
+    <ul>
+      <li>UML 속성이 소프트웨어 시스템의 구성 요소에 아주 잘 대응된다.</li>
+    </ul>
+  </li>
+  <li><strong>개념적인 관점(conceptual perspective)</strong>
+    <ul>
+      <li>특정 도메인에 대해서 이야기하는 데 필요한 용어 사전을 구축하는 것이다.
+  <code class="language-plaintext highlighter-rouge">UML의 핵심 요소를 보는 관점도 다양하지만, 저자는 메타모델이 UML의 정수라고 생각한다.</code></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="표기법과-메타모델">표기법과 메타모델</h2>
+
+<h3 id="표기법">표기법</h3>
+
+<ul>
+  <li><strong>모델</strong>에서 볼 수 있는 <strong>그래픽 표현</strong>들을 말한다.</li>
+  <li>모델링 언어의 <strong>구문(syntax)</strong> 에 해당한다.</li>
+  <li>그래픽 모델링 언어는 엄밀성이 매우 떨어진다. 표기법은 공식적인 정의보다는 <strong>직관</strong>에 호소한다.</li>
+  <li>방법론이 비공식적일지라도 중요한 것은 <strong>유용성</strong>이다.</li>
+</ul>
+
+<h3 id="메타모델">메타모델</h3>
+
+<ul>
+  <li>방법론이 유용성이 잃지 않으면서 더 견고해질 수 있는 한 가지 방법이다.</li>
+  <li><strong>언어의 개념을 정의하는 다이어그램</strong>을 말하며 주로 클래스 다이어그램이다.</li>
+  <li>메타모델이 해당 언어의 <strong>추상적인 구문</strong>을 정의한다.</li>
+</ul>
+
+<p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSSrwPwlYgoq1lyIf49nHzpJWx_kyHxtYNfn3pVU4fhqc8X4uq1" alt="metamodel" /> <br /></p>
+
+<p><strong>그림 1.1</strong> UML 메타모델 일부</p>
+
+<h2 id="uml-다이어그램">UML 다이어그램</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>다이어그램</th>
+      <th>용도</th>
+      <th>유래</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>액티비티<br />(Activity)</td>
+      <td>순차 행동과 병렬 행동</td>
+      <td>UML 1</td>
+    </tr>
+    <tr>
+      <td>클래스<br />(Class)</td>
+      <td>클래스, 특성, 관계</td>
+      <td>UML 1</td>
+    </tr>
+    <tr>
+      <td>커뮤니케이션<br />(Communication)</td>
+      <td>연결에 중점을 둔 객체 간의 교류</td>
+      <td>UML 1의 협력 다이어그램</td>
+    </tr>
+    <tr>
+      <td>컴포넌트<br />(Component)</td>
+      <td>컴포넌트의 구조와 연결</td>
+      <td>UML 1</td>
+    </tr>
+    <tr>
+      <td>복합 구조<br />(Composite structure)</td>
+      <td>실행 시의 클래스를 분해</td>
+      <td>UML 2에서 처음 소개됨</td>
+    </tr>
+    <tr>
+      <td>배치<br />(Deployment)</td>
+      <td>노드에 대한 아티팩트의 배치</td>
+      <td>UML 1</td>
+    </tr>
+    <tr>
+      <td>교류 개요<br />(Interaction overview)</td>
+      <td>시퀀스 다이어그램과<br />액티비티 다이어그램의 혼합</td>
+      <td>UML 1</td>
+    </tr>
+    <tr>
+      <td>객체<br />(Object)</td>
+      <td>인스턴스 구성의 예</td>
+      <td>UML 1에 비공식적으로 사용</td>
+    </tr>
+    <tr>
+      <td>패키지<br />(Package)</td>
+      <td>컴파일 시의 계층적 구조</td>
+      <td>UML 1에 비공식적으로 사용</td>
+    </tr>
+    <tr>
+      <td>시퀀스<br />(Sequence)</td>
+      <td>순서에 중점을 둔 객체 간의 교류</td>
+      <td>UML 1</td>
+    </tr>
+    <tr>
+      <td>상태 기계<br />(State machine)</td>
+      <td>객체가 살아 있는 동안<br />이벤트에 의해서 어떻게 변화되는가</td>
+      <td>UML 1</td>
+    </tr>
+    <tr>
+      <td>타이밍<br />(Timing)</td>
+      <td>타이밍에 중점을 둔 객체 간의 교류</td>
+      <td>UML 2에서 처음 소개됨</td>
+    </tr>
+    <tr>
+      <td>유스케이스<br />(Use case)</td>
+      <td>사용자가 시스템과 어떻게 교류하는가</td>
+      <td>UML 1</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><img src="https://i.imgur.com/FNdqBki.png" alt="image" /><br /></p>
+
+<p><strong>그림 1.2</strong> UML 다이어그램 타입의 분류</p>
+
+<h2 id="적법한-uml이란-무엇인가">적법한 UML이란 무엇인가?</h2>
+
+<p>UML이 <strong>규범적인 규칙</strong>을 가지고 있는가? <strong>기술적인 규칙</strong>을 가지고 있는가?</p>
+
+<ul>
+  <li><strong>규범적인 규칙(prescriptive rules)</strong>
+    <ul>
+      <li>무엇이 적법하고 무엇이 그렇지 않은지, 이 언어가 표현할 수 있는 의미는 무엇인지 정해져있다.</li>
+    </ul>
+  </li>
+  <li><strong>기술적인 규칙(descriptive rules)</strong>
+    <ul>
+      <li>실제 사람들이 언어를 어떻게 사용하는지를 보고 규칙을 이해하는 언어다.</li>
+    </ul>
+  </li>
+</ul>
+
+<p><code class="language-plaintext highlighter-rouge">프로그래밍 언어는 표준 협의회나 독도적인 제조사에 의하여 만들어진 규범적 규칙을 가지고 있는 경우가 많지만, 영어와 같은 일반 언어들은 관례에 의해 의미가 부여되는 기술적인 규칙을 가진다.</code></p>
+
+<ul>
+  <li>UML은 규범적인 규칙을 가지고 있을 것이라고 생각되지만 그렇지 않다.</li>
+  <li><strong>UML 표준이 UML에 대한 정보의 가장 중요한 원천이지만 유일한 것일 수는 없다.</strong></li>
+  <li>UML의 기본적인 원칙은 <strong>다이어그램에 따라서 어떤 정보는 감춰져 있을 수 있다</strong>는 것이다.</li>
+  <li>UML을 <strong>스케치용</strong>이나 <strong>청사진</strong>을 만드는 용도로 사용하는 사람들에게 <strong>적법한 UML 사용을 지나치게 강조하지 않는 것</strong>이 중요하다.</li>
+  <li>시스템에 대해서 더 좋은 설계를 하는 것이 훨씬 더 중요하므로, 저자는 <strong>적법하지 않지만 좋은 설계</strong>가 낫다고 생각한다.</li>
+</ul>
+
+<h2 id="그-외">그 외</h2>
+
+<ul>
+  <li>UML 다이어그램을 보고 그것과 동등한 코드가 어떻게 될 것인지를 정확하게 말할 수가 없다.</li>
+  <li>코드가 어떻게 될 것인지에 대해서 <strong>개략적인 아이디어</strong>를 얻을 수 있다.</li>
+  <li>UML은 여러 가지 다이어그램을 꽤 많이 제공하지만, <strong>필요한 다이어그램들을 모두 포함하고 있는 것은 절대로 아니다.</strong></li>
+  <li>UML 다이어그램 중에 목적에 맞는 것이 없다면 UML이 아닌 다이어그램을 쓰는 것을 주저하지 말자.</li>
+</ul>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/tags/#study" class="page__taxonomy-item" rel="tag">Study</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#uml" class="page__taxonomy-item" rel="tag">UML</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#%EC%9A%94%EC%95%BD" class="page__taxonomy-item" rel="tag">요약</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#%EC%A0%95%EB%A6%AC" class="page__taxonomy-item" rel="tag">정리</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/categories/#study" class="page__taxonomy-item" rel="tag">Study</a>
+    
+    </span>
+  </p>
+
+
+        
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2020-03-26T00:00:00+09:00">March 26, 2020</time></p>
+        
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=%5BUML+Distilled%5D+1%EC%9E%A5%20http%3A%2F%2Flocalhost%3A4000%2Fstudy%2Fuml-distilled-chapter1%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fstudy%2Fuml-distilled-chapter1%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fstudy%2Fuml-distilled-chapter1%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/basecamp/basecamp/" class="pagination--pager" title="9주간의 Basecamp를 마치며
+">Previous</a>
+    
+    
+      <a href="/study/uml-distilled-chapter2/" class="pagination--pager" title="[UML Distilled] 2장
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You may also enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/study/promise-async-await/" rel="permalink">Promise, Async, Await
+</a>
+      
+    </h2>
+    <!--
+    
+    -->
+    
+      <p class="page__meta"><i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i> January 14 2021</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">promise, async, await 사용 방법
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/1d1c_1/" rel="permalink">1d1c_1
+</a>
+      
+    </h2>
+    <!--
+    
+    -->
+    
+      <p class="page__meta"><i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i> June 07 2020</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">06.01
+
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/study/object-chapter9/" rel="permalink">[Object] 9장
+</a>
+      
+    </h2>
+    <!--
+    
+    -->
+    
+      <p class="page__meta"><i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i> June 04 2020</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Object 9장 요약
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/study/object-chapter10/" rel="permalink">[Object] 10장
+</a>
+      
+    </h2>
+    <!--
+    
+    -->
+    
+      <p class="page__meta"><i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i> June 04 2020</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Object 10장 요약
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+      
+        
+      
+        
+          <li><a href="https://github.com/anstjaos" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+      
+        
+      
+        
+          <li><a href="https://instagram.com/document_k" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+        
+      
+    
+
+    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2021 anstjaos. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+  <script src="https://kit.fontawesome.com/4eee35f757.js"></script>
+
+
+
+
+
+
+
+    
+  <script>
+    var disqus_config = function () {
+      this.page.url = "http://localhost:4000/study/uml-distilled-chapter1/";  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = "/study/uml-distilled-chapter1"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    (function() { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = 'https://github-comments.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+  
+
+
+
+
+
+  </body>
+</html>
