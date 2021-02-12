@@ -1,6 +1,6 @@
 ---
 title: "Promise, Async, Await"
-excerpt: "promise, async, await 사용 방법"
+excerpt: "promise, async, await 설명"
 
 categories:
 - Study 
