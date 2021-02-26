@@ -1,6 +1,6 @@
 ---
 title: "연관 관계 매핑 시 고려사항"
-excerpt: "JPA 연관 관계 매핑"
+excerpt: "JPA 연관 관계"
 
 categories:
   - JPA
