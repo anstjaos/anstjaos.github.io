@@ -14,5 +14,7 @@ layout: single
     * 전체 개발, Python
   * SW Maestro 10기 연수생
     * Saficket 개발, Hyperledger Fabric Android Docker
+  * ACM-ICPC
+    * ACM-ICPC 본선 진출
 * 2020
   * NHN Rookie 7기 입사
