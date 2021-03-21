@@ -1,6 +1,6 @@
 ---
-title: "3/14 개발 일지"
-excerpt: "3월 2주차 개발 일지"
+title: "3/21 개발 일지"
+excerpt: "3월 3주차 개발 일지"
 
 categories:
   - Development Journal
