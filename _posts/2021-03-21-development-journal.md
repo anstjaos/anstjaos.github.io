@@ -1,13 +1,13 @@
 ---
-title: "IntelliJ Live Template"
-excerpt: "Live template 설정 방법"
+title: "3/21 개발 일지"
+excerpt: "3월 3주차 개발 일지"
 
 categories:
   - Development Journal
 tags:
   - Study
   - 개인공부
-  - Tip
+  - 개발 일지
 ---
 
 
