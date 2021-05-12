@@ -6,7 +6,7 @@ layout: single
 
 ## 꾸준히 노력하는 개발자 👨🏻‍💻
 
-**GitHub : https://github.com/anstjaos** :+1:
+**GitHub : https://github.com/anstjaos** ​
 
 * 2018
   * 대경권 대학생 프로그래밍 경진대회 우수상 🏆
