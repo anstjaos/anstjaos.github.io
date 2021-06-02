@@ -18,7 +18,7 @@ HTTP Response Status code는 일단 생략한다.
 
 
 
-# REST API Document
+# **REST** API Document
 
 * [회원 관리](#user)
 * [운동 관리](#exercise)
